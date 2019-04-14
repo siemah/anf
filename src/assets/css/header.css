@@ -1,0 +1,129 @@
+/**********************
+      MAIN MENU
+**********************/
+.main-menu{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+}
+.fake-elem {
+  height: 55px;
+  clear: both;
+  width: 100%;
+}
+.main-menu__mobile-menu-trigger {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 55px;
+  background-color: #f6f6f6;
+  z-index: -10;
+  border: none;
+  outline: none;
+  padding: 0 .75rem;
+}
+.fake-bar{
+  height: 3px;
+  background-color: #1e0c65;
+  margin: 5px 0;
+}
+.main-manu__logo-brand {
+  display: block;
+  height: 55px;
+  line-height: 150%;
+  width: 125px;
+  max-width: 125px;
+  float: left;
+  position: relative;
+  margin-right: .5rem;
+}
+.main-manu__logo-brand img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-menu__container {
+  height: 55px;
+  line-height: 55px;
+  width: auto;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+}
+.main-menu__item {
+  height: 100%;
+  float: left;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+}
+.main-menu__link {
+  padding: 0 .5rem;
+  display: block;
+  text-decoration: none;
+  color: #938e92;
+  position: relative;
+  overflow: hidden;
+  font-size: 17px;
+}
+.main-menu__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  height: 5px;
+  background: #1e0c65;
+  transform: translateY(5px);
+  transition: transform .3s;
+}
+.main-menu__link:hover {
+  color: #1e0c65;
+}
+.main-menu__link:hover::before {
+  transform: translateY(0);
+}
+
+.main-menu__right {
+  position: relative;
+  background-color: #f6f6f6;
+  padding-right: 2.5%;
+}
+.main-menu__right::before,
+.main-menu__right::after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  height: 100%;
+  width: 50px;
+  background-color: inherit;
+}
+.main-menu__right::after {
+  width: 0;
+  height: 0;
+  left: -75px;
+  border-right: 25px solid #f6f6f6;
+  border-bottom: 55px solid transparent;
+  background-color: transparent;
+}
+
+.btn {
+  margin: 7px .5rem;
+  line-height: 40px;
+  height: 40px;
+  border-radius: 3px;
+}
+.btn::before,
+.btn::after {
+  display: none;
+  border-radius: 3px;
+}
+.btn:hover {
+  color: #ffffff;
+}
+.btn-primary {
+  background-color: #1e0c65;
+  color: #ffffff;
+}
