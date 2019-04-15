@@ -32,11 +32,45 @@
     transition: all .5s;
   }
   .main-menu__container.show {
-    opacity: 2;
+    opacity: 1;
     z-index: 10;
     visibility: visible;
+    float: none !important;
+    position: absolute;
+    top: 55px;
+    width: 50%;
+    height: auto;
+  }
+  .main-menu__right.show {
+    left: 50%;
+    background-color: inherit;
+  }
+  .main-menu__container.show .main-menu__item {
+    background:grren;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+  }
+  .main-menu__container.show .main-menu__link {
+    display: inline-block;
+    color: #474747;
+    height: 100%;
+  }
+  .main-menu__container.show .main-menu__link::before {
+    display: none;
   }
   .main-menu__link {
     font-size: 17px;
+  }
+  .main-menu__container.show .btn.btn-primary {
+    width: 100%;
+    border-radius: 0;
+    color: #ffffff;
+  }
+  .main-menu.full-screen .main-menu__mobile-menu-trigger {
+    width: 55px;
+    height: 55px;
+    bottom: auto !important;
   }
 }

@@ -875,6 +875,13 @@ a, button {
 .half {
   width: 50%;
 }
+.hidden {
+  overflow: hidden;
+}
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+}
 /********** WEBSITE CSS ***********/
 
 /**** ANIMATION *********/

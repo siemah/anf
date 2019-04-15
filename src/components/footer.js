@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getClassesOf, hasClass, addClass, removeClass } from '../utils/domTools';
+import { hasClass, addClass, removeClass } from '../utils/domTools';
 
 export default class Footer extends React.Component {
 
@@ -41,7 +41,7 @@ export default class Footer extends React.Component {
      const mainMenu = document.querySelector('.js-main-menu');
      const mainMenuHeight = mainMenu.offsetHeight;
      const windowScroll = window.scrollY;
-     
+
      if( windowScroll > mainMenuHeight && mainMenu && !hasClass(mainMenu, 'shadow')) {
        addClass(mainMenu, 'shadow')
      } else if (windowScroll <= mainMenuHeight &&mainMenu && hasClass(mainMenu, 'shadow')) {

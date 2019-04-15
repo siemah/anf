@@ -44,7 +44,7 @@ const MainMenu = props => {
       /**
        * @name toggleMobileMenu
        * display or dosnt by toggling the show class
-       * @param {Boolean} isDisplay to verify if will show mobile menu or nope 
+       * @param {Boolean} isDisplay to verify if will show mobile menu or nope
        */
       const toggleMobileMenu = (isDisplay=true) => menus.forEach( menu => {
         if(isDisplay) addClass(menu, 'show')
@@ -54,10 +54,14 @@ const MainMenu = props => {
       if(hasClass(buttonRef.current, 'anime-rotate')) {
         removeClass(buttonRef.current, 'anime-rotate');
         toggleMobileMenu(false);
+        removeClass(document.querySelector('html'), 'hidden');
+        removeClass(document.querySelector('.js-main-menu'), 'full-screen');
       }
       else {
         addClass(buttonRef.current, 'anime-rotate');
         toggleMobileMenu(true);
+        addClass(document.querySelector('html'), 'hidden');
+        addClass(document.querySelector('.js-main-menu'), 'full-screen');
       }
 
     }
