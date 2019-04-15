@@ -3,10 +3,12 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Jumbotron from '../components/Jumbotron'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <Jumbotron />
     <h1>Hi From nodejs rebuild process</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

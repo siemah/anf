@@ -1,0 +1,41 @@
+.jumbotron {
+  position: relative;
+}
+.jumbotron.full {
+  height: 100vh;
+}
+.theme-jumbotron__default {
+  background-color: #ffffff;
+}
+.theme-jumbotron__dark {
+  background-color: #1e0c65;
+}
+.jumbotron__slide-down-arrrow {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.jumbotron__slide-down-arrrow__image {
+  height: 30px;
+  width: 30px;
+  animation: slideUpDown 2s infinite;
+}
+
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  10% {
+    transform: translateY(0px);
+  }
+}

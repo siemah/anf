@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { hasClass, addClass, removeClass } from '../utils/domTools';
+import { $, hasClass, addClass, removeClass } from '../utils/domTools';
 
 export default class Footer extends React.Component {
 
@@ -38,7 +38,7 @@ export default class Footer extends React.Component {
    * this is a callback function called when scroll event fired
    */
    onScroll = e => {
-     const mainMenu = document.querySelector('.js-main-menu');
+     const mainMenu = $('.js-main-menu');
      const mainMenuHeight = mainMenu.offsetHeight;
      const windowScroll = window.scrollY;
 

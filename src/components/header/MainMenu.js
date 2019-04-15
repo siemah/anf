@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { Container } from '../layout-components/grid';
 import MenuBlock from './MenuBlock';
 
-import { hasClass, addClass, removeClass } from '../../utils/domTools';
+import { $, hasClass, addClass, removeClass } from '../../utils/domTools';
 
 const MainMenu = props => {
   const centerItems = [
@@ -54,14 +54,14 @@ const MainMenu = props => {
       if(hasClass(buttonRef.current, 'anime-rotate')) {
         removeClass(buttonRef.current, 'anime-rotate');
         toggleMobileMenu(false);
-        removeClass(document.querySelector('html'), 'hidden');
-        removeClass(document.querySelector('.js-main-menu'), 'full-screen');
+        removeClass($('html'), 'hidden');
+        removeClass($('.js-main-menu'), 'full-screen');
       }
       else {
         addClass(buttonRef.current, 'anime-rotate');
         toggleMobileMenu(true);
-        addClass(document.querySelector('html'), 'hidden');
-        addClass(document.querySelector('.js-main-menu'), 'full-screen');
+        addClass($('html'), 'hidden');
+        addClass($('.js-main-menu'), 'full-screen');
       }
 
     }

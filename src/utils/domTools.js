@@ -33,3 +33,13 @@
   export const removeClass = (domElement, className) => {
     domElement.className = getClassesOf(domElement).replace(className, '');
   }
+
+/**
+ * @name $
+ * replace document.querySelectorAll by $
+ * @param {String} selector css selector
+ * @return {HTMLElement}
+ */
+ export const $ = selector => {
+   return document.querySelector(selector)
+ }
