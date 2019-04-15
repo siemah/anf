@@ -6,6 +6,7 @@
   top: 0;
   width: 100%;
   height: 55px;
+  background-color: #ffffff;
 }
 .fake-elem {
   height: 55px;
@@ -23,6 +24,32 @@
   border: none;
   outline: none;
   padding: 0 .75rem;
+  transition: background-color .5s, transform .3s;
+}
+.main-menu__mobile-menu-trigger:hover {
+  background-color: #1e0c65;
+}
+.main-menu__mobile-menu-trigger.anime-rotate {
+  transform: rotate(90deg);
+  background-color: #1e0c65;
+}
+.main-menu__mobile-menu-trigger.anime-rotate div {
+  background-color: #ffffff;
+}
+.main-menu__mobile-menu-trigger.anime-rotate div:first-child {
+  transform: rotate(45deg) translate(1px, 10px);
+}
+.main-menu__mobile-menu-trigger.anime-rotate div:last-child {
+  transform: rotate(-45deg) translate(1px, -10px);
+}
+.main-menu__mobile-menu-trigger.anime-rotate div.half{
+  visibility: hidden;
+}
+.main-menu__mobile-menu-trigger div {
+  border-radius: 3px;
+}
+.main-menu__mobile-menu-trigger:hover div{
+  background-color: #ffffff;
 }
 .fake-bar{
   height: 3px;

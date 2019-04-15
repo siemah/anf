@@ -1,0 +1,42 @@
+@media only screen and (max-width: 850px) {
+
+  /********************
+        Header
+  ********************/
+  .main-menu__right::before,
+  .main-menu__right::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  /********************
+        Header
+  ********************/
+  .main-menu__link {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /********************
+        Header
+  ********************/
+  .main-menu.shadow {
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  }
+  .main-menu__container  {
+    opacity: 0;
+    z-index: -10;
+    visibility: hidden;
+    transition: all .5s;
+  }
+  .main-menu__container.show {
+    opacity: 2;
+    z-index: 10;
+    visibility: visible;
+  }
+  .main-menu__link {
+    font-size: 17px;
+  }
+}
