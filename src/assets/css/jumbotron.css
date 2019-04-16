@@ -17,6 +17,7 @@
   bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 .jumbotron__slide-down-arrrow__image {
   height: 30px;

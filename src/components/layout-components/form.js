@@ -21,7 +21,7 @@ export const FormField = ({name, type='text', label='', parentClassName='', erro
 
 export const Button = ({ name='', type='button', className='', children, ...rest }) => (
   <button
-    className={`form-filed-button ${className}`}
+    className={`button ${className}`}
     type={type}
     name={name}
     aria-expanded="false"

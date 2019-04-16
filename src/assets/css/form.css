@@ -1,0 +1,7 @@
+.button {
+  background-color: inherit;
+  padding: .5rem 1rem;
+  transform: skewX(20deg);
+  border: none;
+  transition: all .5s ease-in-out;
+}

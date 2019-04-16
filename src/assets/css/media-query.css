@@ -1,5 +1,9 @@
+@media only screen and (max-width: 1150px) {
+  .hero__title {
+    font-size: 70px !important;
+  }
+}
 @media only screen and (max-width: 850px) {
-
   /********************
         Header
   ********************/
@@ -22,9 +26,6 @@
   /********************
         Header
   ********************/
-  .main-menu.shadow {
-    box-shadow: 0 2px 10px rgba(0,0,0,.15);
-  }
   .main-menu__container  {
     opacity: 0;
     z-index: -10;
@@ -73,6 +74,16 @@
     height: 55px;
     bottom: auto !important;
   }
+  /************************
+          Hero
+  ************************/
+  .hero__header{
+    width: 100% !important;
+  }
+  .hero__title {
+    font-size: 55px !important;
+  }
+
 }
 
 @media only screen and (max-width: 550px) {

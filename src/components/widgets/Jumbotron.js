@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-import '../assets/css/jumbotron.css';
+import '../../assets/css/jumbotron.css';
 
 const Jumbotron = ({size='full', theme='default', className='', nextElementId='', children, ...rest}) => {
   return (
