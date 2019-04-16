@@ -9,7 +9,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Jumbotron />
-    <h1>Hi From nodejs rebuild process</h1>
+    <div className="skew-section-after">
+      <h1>Hi From nodejs rebuild process</h1>
+    </div>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, height: 2000, marginBottom: `1.45rem` }}>

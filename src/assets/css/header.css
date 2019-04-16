@@ -57,7 +57,7 @@
   background-color: #1e0c65;
   margin: 5px 0;
 }
-.main-manu__logo-brand {
+.main-menu__logo-brand {
   display: block;
   height: 55px;
   line-height: 150%;
@@ -67,7 +67,7 @@
   position: relative;
   margin-right: .5rem;
 }
-.main-manu__logo-brand img {
+.main-menu__logo-brand img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

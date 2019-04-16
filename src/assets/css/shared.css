@@ -882,6 +882,31 @@ a, button {
   height: 100vh;
   width: 100vw;
 }
+.skew-section-before,
+.skew-section-after {
+  position: relative;
+}
+
+.skew-section-before::before,
+.skew-section-after::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  height: 80%;
+  transform: skewY(-7deg);
+  transform-origin: 100%;
+  background-color: inherit;
+}
+
+.skew-section-before::before {
+  transform: skewY(7deg);
+  transform-origin: 0;
+  top: 0;
+  bottom: auto;
+}
 /********** WEBSITE CSS ***********/
 
 /**** ANIMATION *********/

@@ -6,9 +6,11 @@
 }
 .theme-jumbotron__default {
   background-color: #ffffff;
+  color: #1e0c65;
 }
 .theme-jumbotron__dark {
   background-color: #1e0c65;
+  color: #ffffff;
 }
 .jumbotron__slide-down-arrrow {
   position: absolute;

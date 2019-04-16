@@ -1,6 +1,11 @@
 import React from 'react';
+import { Link } from 'gatsby';
+
+import BrandLogo from './widgets/BrandLogo';
 
 import { $, hasClass, addClass, removeClass } from '../utils/domTools';
+
+import '../assets/css/footer.css';
 
 export default class Footer extends React.Component {
 
@@ -58,7 +63,38 @@ export default class Footer extends React.Component {
   }
 
   render() {
-    return(<></>)
+    return(
+      <div className="footer footer-block center">
+        <div className="footer-block__brand-block">
+          <BrandLogo className='footer-block__brand-logo' />
+          <h2 className="footer-block__brand-name mb0">
+            Association National des Financiers
+          </h2>
+        </div>
+        <nav className="footer-block__creadcrumb-menu">
+          <ul className='m0'>
+            <li className='footer-block__creadcrumb-item'>
+              <Link to='/' className='footer-block__creadcrumb-link'>Accueil</Link>
+            </li>
+            <li className='footer-block__creadcrumb-item'>
+              <Link to='/' className='footer-block__creadcrumb-link'>Presentation</Link>
+            </li>
+            <li className='footer-block__creadcrumb-item'>
+              <Link to='/' className='footer-block__creadcrumb-link'>Caontact</Link>
+            </li>
+            <li className='footer-block__creadcrumb-item'>
+              <Link to='/' className='footer-block__creadcrumb-link'>Preinscription</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className={"copyright"}>
+          <div className={"left"}>© 2019 A.N.F. Tous les droits sont réservés. </div>
+          <div className={'right'}>
+            Designed by
+            <a href="https://dayenio.ml" >DayenIO</a></div>
+        </div>
+      </div>
+    )
   }
 
 }

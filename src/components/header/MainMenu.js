@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import { Container } from '../layout-components/grid';
 import MenuBlock from './MenuBlock';
+import BrandLogo from '../widgets/BrandLogo'
 
 import { $, hasClass, addClass, removeClass } from '../../utils/domTools';
 
@@ -77,9 +77,7 @@ const MainMenu = props => {
         <div className="fake-bar "></div>
       </button>
       <Container>
-        <Link to='/' className="main-manu__logo-brand">
-          <img src={`https://css.gbtcdn.com/imagecache/gbm/img/site/logo_m@2x.png`} className='mb0' alt="brand logo"/>
-        </Link>
+        <BrandLogo className='main-menu__logo-brand left' />
         <MenuBlock className='main-menu__center left js-main-menu__container' itemsList={centerItems} />
       </Container>
       <MenuBlock className='main-menu__right right js-main-menu__container' itemsList={rightItems} />
