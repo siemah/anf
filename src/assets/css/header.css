@@ -23,7 +23,7 @@
   bottom: 0;
   right: 0;
   width: 55px;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
   z-index: -10;
   border: none;
   outline: none;
@@ -50,7 +50,7 @@
   visibility: hidden;
 }
 .main-menu__mobile-menu-trigger div {
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .main-menu__mobile-menu-trigger:hover div{
   background-color: #ffffff;

@@ -54,7 +54,7 @@
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto 100%;
-  background-image: url("https://acumen.org/wp-content/themes/acumen-theme/img/global/a-hero.png");
+  background-image: url("../images/a-hero-blue.png");
 }
 .hero__media span{
   position: absolute;
@@ -67,6 +67,33 @@
   background-image: url("https://acumen.org/wp-content/uploads/one-great-idea-homepage-1024x683.jpg");
   bottom: 0;
   z-index: 1;
+}
+
+/***********************
+      AboutBlock
+************************/
+.about-block{
+  background-color: #f4f4f4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  color: #000000;
+}
+.about-block::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  z-index: -1;
+  background-image: url("../images/a-hero-grey.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #eaeaea;
 }
 
 /************************
