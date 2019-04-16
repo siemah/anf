@@ -4,7 +4,9 @@
 .hero {
   position: relative;
 }
-
+.hero-block {
+  background-color: #ffffff;
+}
 .hero__header {
   position: absolute;
   top: 50%;
@@ -66,3 +68,51 @@
   bottom: 0;
   z-index: 1;
 }
+
+/************************
+      NetworkSection
+************************/
+.network-block {
+  background-color: #1e0c65;
+  padding-top: 10rem;
+  color: #ffffff;
+  padding-bottom: .75rem;
+}
+.circle {
+  display: inline-block;
+  height: 130px;
+  line-height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  color: #ffffff;
+  vertical-align: middle;
+  font-size: 17px;
+  position: relative;
+  z-index: 10;
+}
+.big {
+  padding: 0px 10px;
+  line-height: 200px;
+  height: 200px;
+  width: 200px;
+  font-size: 14px;
+  z-index: 1;
+}
+.network-block__link {
+  margin-left: .75rem;
+  background-color: #0ab587;
+  padding: 0;
+}
+.network-block__link a {
+  display: block;
+  color: #ffffff;
+  padding: .5rem 1rem;
+}
+
+
+
+
+
+
+
+/**/

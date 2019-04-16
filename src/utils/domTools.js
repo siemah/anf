@@ -1,4 +1,20 @@
 /**
+ * @name isInViewport
+ * verify if the current element is in viewport or nope
+ * @param {HTMLElement} elem dom element
+ * @return {Boolean} true if elem is in viewport otherwise false
+ */
+export const isInViewport = (elem) => {
+  let rect = elem.getBoundingClientRect();
+  return (
+    rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.top >= 0 &&
+    rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+    rect.left >= 0
+  );
+}
+
+/**
  * @name getClassesOf
  * @author siemah
  * return class attribute of the current elemenet
@@ -35,11 +51,17 @@
   }
 
 /**
+ * @name addCss
+ * add some css using javascript
+ */
+ export const addCss = (elem, cssAttribute, cssValue) => elem.style[cssAttribute] = cssValue;
+
+/**
  * @name $
  * replace document.querySelectorAll by $
  * @param {String} selector css selector
  * @return {HTMLElement}
  */
- export const $ = selector => {
-   return document.querySelector(selector)
+ export const $ = (selector, all=false) => {
+   return all? document.querySelectorAll(selector) : document.querySelector(selector)
  }

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import BrandLogo from './widgets/BrandLogo';
 
-import { $, hasClass, addClass, removeClass } from '../utils/domTools';
+import { $, hasClass, addClass, removeClass, isInViewport } from '../utils/domTools';
 
 import '../assets/css/footer.css';
 
@@ -52,6 +52,23 @@ export default class Footer extends React.Component {
      } else if (windowScroll <= mainMenuHeight &&mainMenu && hasClass(mainMenu, 'shadow')) {
        removeClass(mainMenu, ' shadow');
      }
+
+     const $jsSlideUpElem = $('.js-slideUp-block');
+     if( $jsSlideUpElem && window.location.pathname === '/' && isInViewport($jsSlideUpElem) ){
+       const $jsSlideUpElems = $('.js-slideUp', true);
+       $jsSlideUpElems.forEach( elem => {
+         // if( isInViewport(elem)) {
+           const delay = elem.getAttribute('data-delay') * 500;
+           setTimeout(() => {
+             removeClass(elem, 'opacity-0');
+             addClass(elem, 'slideUp');
+             removeClass(elem, 'js-slideUp');
+           }, delay);
+         // }
+       })
+       removeClass($jsSlideUpElem, 'js-slideUp-block');
+     }
+
    }
 
   componentWillUnMount(){
