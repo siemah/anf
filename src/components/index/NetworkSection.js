@@ -6,8 +6,31 @@ import { Container, Row, Col } from '../layout-components/grid';
 import { Button } from '../layout-components/form';
 
 const NetworkSection = ({className='', ...rest}) => (
-  <div className="network-block" id='network'>
-    <Container>
+  <div className={`network-block ${className}`} id='network'>
+    <Container style={{position: 'relative', zIndex: 10}}>
+
+      <Row>
+        <Col className="network-block_left" s='12' m='6'>
+          <h2 className="network-block__title capitalize">Notre Missions</h2>
+          <p className="network-block__description">
+            Dans le cadre de ses missions, l’Association Nationale des Financiers (ANF) est   chargée de :
+          </p>
+        </Col>
+        <Col className="network-block_right"s='12' m='6'>
+          <div className="network-block__description">
+            <ul className="network-block__list m0">
+              <li className="network-block__item mb0">S’intéresser et de prendre en charge les préoccupations scientifiques et Pédagogique des Financiers Algériens</li>
+              <li className="network-block__item mb0">Organiser des séminaires et des rencontres avec les financiers à l’échelle Nationale et Internationale</li>
+              <li className="network-block__item mb0">Représentation de l’ensemble des membres de l’association envers les différentes institutions et organismes se rapportant aux objectifs de l’association</li>
+            </ul>
+          </div>
+        </Col>
+        <Col s="12" className="mt-2">
+          <Button name='contact' className='network-block__link button capitalize right'>
+            <Link to='/contactez-nous'>contactez Nous</Link>
+          </Button>
+        </Col>
+      </Row>
 
       <Row>
         <Col className="network-block_left" s='12' m='6'>

@@ -1,13 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 import { Container, Row, Col } from '../layout-components/grid';
 import { Button } from '../layout-components/form';
 
-const About = props => (
-  <div className="about-block">
+const About = ({className='', ...rest}) => (
+  <div className={`about-block ${className}`} {...rest}>
   <Container>
-    <Row>
+    <Row className='mb0'>
       <Col className="network-block_left" s='12' m='6'>
         <h2 className="network-block__title capitalize">à propos de l’ANF</h2>
         <p className="network-block__description">
@@ -22,8 +23,8 @@ const About = props => (
           dispositions de la loi 12-06 du 12 janvier 2012 relative aux associations.
         </p>
       </Col>
-      <Col s='12'>
-        <Button name='button' style={{backgroundColor: '#1e0c65',}}>
+      <Col s='12' className='mt-2'>
+        <Button className='right' name='button' style={{backgroundColor: '#1e0c65',}}>
           <Link to='/a-propos-anf' style={{color: '#ffffff', display: 'block'}}>voir plus</Link>
         </Button>
       </Col>
@@ -32,4 +33,7 @@ const About = props => (
   </div>
 )
 
+About.propTypes = {
+  className: PropTypes.string,
+}
 export default About;

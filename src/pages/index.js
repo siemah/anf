@@ -13,8 +13,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <IndexHero />
-    <About className='skew-section-after'/>
-    <NetworkSection />
+    <About id='about' />
+    <NetworkSection className='skew-section-after' />
   </Layout>
 )
 

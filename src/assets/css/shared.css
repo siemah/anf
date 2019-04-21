@@ -890,7 +890,6 @@ a, button {
   position: relative;
 }
 
-.skew-section-before::before,
 .skew-section-after::after {
   content: '';
   position: absolute;
@@ -904,12 +903,6 @@ a, button {
   background-color: inherit;
 }
 
-.skew-section-before::before {
-  transform: skewY(7deg);
-  transform-origin: 0;
-  top: 0;
-  bottom: auto;
-}
 .opacity-0 {
   opacity: 0 !important;
 }
