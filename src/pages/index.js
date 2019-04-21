@@ -23,15 +23,15 @@ const IndexPage = () => (
     <BackgroundRow src={BGImage} className='background-block_size_3 pt-10'>
       <Row>
         <Col s="12" className="motivation-block">
-          <h2 className="header-title__2">
+          <h2 data-delay={0} className="header-title__2 opacity-0 js-slide-from-down">
             <span className="hero-title__wrapper">Pourquoi adhérer?</span>
           </h2>
           <div className="description-block">
             <ul className="list ml0">
-              <li className={'list__item mb0'}><span className='hero-title__wrapper'>Assister à l’assemblée générale annuelle</span></li>
-              <li className={'list__item mb0'}><span className='hero-title__wrapper'>Accéder à la revue de l’ANF</span></li>
+              <li data-delay={1} className={'list__item mb0 opacity-0 js-slide-from-down'}><span className='hero-title__wrapper'>Assister à l’assemblée générale annuelle</span></li>
+              <li data-delay={2} className={'list__item mb0 opacity-0 js-slide-from-down'}><span className='hero-title__wrapper'>Accéder à la revue de l’ANF</span></li>
             </ul>
-            <Button className='description__button-wrapper p0' name='preinscription'>
+            <Button data-delay={3} className='description__button-wrapper p0 opacity-0 js-slide-from-down' name='preinscription'>
               <Link to='/preinscription' title='Preinscrire ici' className='button__material description__link-button mt0' >Préinscription</Link>
             </Button>
           </div>

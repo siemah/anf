@@ -915,7 +915,7 @@ a, button {
   background-color: #0ab587;
   background-image: linear-gradient(to left, #0ab587, #1e0c65);
   box-shadow: 5px 7px 10px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
+  border-radius: 3px;
   color: #ffffff !important;
   transition: all .3s;
   padding: .75rem 1.5rem;
@@ -948,6 +948,15 @@ a, button {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+.slideFromDown {
+  animation: slideFromDown 1.5s;
+  transition: all .5s;
+}
+@keyframes slideFromDown {
+  0% { transform: translateY(5rem);}
+  100% { transform: translateY(0px);}
 }
 
 .pulse {

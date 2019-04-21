@@ -10,13 +10,13 @@ const NetworkSection = ({className='', ...rest}) => (
     <Container style={{position: 'relative', zIndex: 10}}>
 
       <Row>
-        <Col className="network-block_left" s='12' m='6'>
+        <Col className="network-block_left opacity-0 js-slide-from-down" data-delay={0} s='12' m='6'>
           <h2 className="network-block__title capitalize">Notre Missions</h2>
           <p className="network-block__description">
             Dans le cadre de ses missions, l’Association Nationale des Financiers (ANF) est   chargée de :
           </p>
         </Col>
-        <Col className="network-block_right"s='12' m='6'>
+        <Col className="network-block_right opacity-0 js-slide-from-down" data-delay={1} s='12' m='6'>
           <div className="network-block__description">
             <ul className="network-block__list m0">
               <li className="network-block__item mb0">S’intéresser et de prendre en charge les préoccupations scientifiques et Pédagogique des Financiers Algériens</li>
@@ -25,7 +25,7 @@ const NetworkSection = ({className='', ...rest}) => (
             </ul>
           </div>
         </Col>
-        <Col s="12" className="mt-2">
+        <Col s="12" className="mt-2 opacity-0 js-slide-from-down" data-delay={2}>
           <Button name='contact' className='network-block__link button capitalize right'>
             <Link to='/contactez-nous'>contactez Nous</Link>
           </Button>
@@ -33,13 +33,13 @@ const NetworkSection = ({className='', ...rest}) => (
       </Row>
 
       <Row>
-        <Col className="network-block_left" s='12' m='6'>
+        <Col className="network-block_left opacity-0 js-slide-from-down" data-delay={3} s='12' m='6'>
           <h2 className="network-block__title capitalize">Réseau de l’ANF</h2>
           <p className="network-block__description">
             Un réseau Régional est mis en place composé de 4 conseils régionaux répartis comme suit :
           </p>
         </Col>
-        <Col className="network-block_right"s='12' m='6'>
+        <Col className="network-block_right opacity-0 js-slide-from-down" data-delay={4} s='12' m='6'>
           <p className="network-block__description">
             Aussi, et au niveau des 48 wilayas du pays des comités de wilayas seront
             installées afin de pouvoir contribuer efficacement à l’amélioration des

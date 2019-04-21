@@ -69,6 +69,18 @@ export default class Footer extends React.Component {
        removeClass($jsSlideUpElem, 'js-slideUp-block');
      }
 
+     const $slideFromDown = $('.js-slide-from-down', true);
+     if( $slideFromDown.length ) {
+       $slideFromDown.forEach( (elem, i) => {
+         if( isInViewport(elem) ) {
+           setTimeout(() => {
+             removeClass(elem, 'opacity-0');
+             removeClass(elem, 'js-slide-from-down');
+             addClass(elem, 'slideFromDown');
+           }, elem.getAttribute('data-delay') * 500)
+         }
+       });
+     }
    }
 
   componentWillUnMount(){
