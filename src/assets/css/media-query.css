@@ -99,6 +99,7 @@
   }
   .copyright {
     height: auto;
+    font-size: 14px;
   }
   .copyright div {
     float: none !important;
