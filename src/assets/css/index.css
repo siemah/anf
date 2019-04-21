@@ -146,10 +146,39 @@
 .network-block__item {
   font-size: 14px;
 }
+/***********************
+      Background
+***********************/
+.background-block {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.background-block_size_3 {
+  height: 75vh;
+}
 
+.header-title__2,
+.description-block {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: .5rem;
+}
+.list__item {
+  font-size: 20px;
+  list-style: none;
+}
+.description__button-wrapper{
+  transform: none ;
+}
+.description__link-button {
+  font-size: 20px;
+  display: block;
 
-
-
-
-
+}
+.motivation-block .hero-title__wrapper {
+  background-color: #0ab587;
+  color: #ffffff;
+}
 /**/

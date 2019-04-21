@@ -853,6 +853,9 @@ a, button {
 .mt-2 {
   margin-top: 2em;
 }
+.pt-10 {
+  padding-top: 10em;
+}
 .p0 {
   padding: 0 !important;
 }
@@ -902,9 +905,25 @@ a, button {
   transform-origin: 100%;
   background-color: inherit;
 }
-
 .opacity-0 {
   opacity: 0 !important;
+}
+.button__material {
+  transform: none !important;
+  margin-top: .75rem;
+  border-radius: 5px;
+  background-color: #0ab587;
+  background-image: linear-gradient(to left, #0ab587, #1e0c65);
+  box-shadow: 5px 7px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  color: #ffffff !important;
+  transition: all .3s;
+  padding: .75rem 1.5rem;
+}
+.button__material:hover,
+.button__material:focus,
+.button__material:active {
+  background-image: linear-gradient(to left,#1e0c65 , #0ab587);
 }
 /********** WEBSITE CSS ***********/
 
