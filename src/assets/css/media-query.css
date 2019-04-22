@@ -124,6 +124,9 @@
     width: 120px !important;
     overflow: hidden;
   }
+  .background-block {
+    padding-top: 5em !important;
+  }
 }
 
 @media only screen and (max-height: 450px) {
