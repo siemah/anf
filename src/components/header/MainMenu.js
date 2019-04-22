@@ -71,6 +71,8 @@ const MainMenu = props => {
       <button
         ref={buttonRef}
         onClick={onClick}
+        aria-label=''
+        aria-hidden="true"
         className="main-menu__mobile-menu-trigger">
         <div className="fake-bar"></div>
         <div className="fake-bar half"></div>
