@@ -66,6 +66,15 @@ const MainMenu = props => {
 
     }
   }
+  /**
+   * @name onClickLink
+   * fired when user click a link of menu to
+   * remove hidden class of html element
+   * @see onClick line 37
+   */
+  const onClickLink = e => {
+    if( hasClass($('html'), 'hidden') ) removeClass($('html'), 'hidden');
+  }
   return (
     <nav className="main-menu js-main-menu">
       <button
@@ -79,10 +88,10 @@ const MainMenu = props => {
         <div className="fake-bar "></div>
       </button>
       <Container>
-        <BrandLogo className='main-menu__logo-brand left' />
-        <MenuBlock className='main-menu__center left js-main-menu__container' itemsList={centerItems} />
+        <BrandLogo className='main-menu__logo-brand left' onClickLink={onClickLink} />
+        <MenuBlock className='main-menu__center left js-main-menu__container' onClickLink={onClickLink} itemsList={centerItems} />
       </Container>
-      <MenuBlock className='main-menu__right right js-main-menu__container' itemsList={rightItems} />
+      <MenuBlock className='main-menu__right right js-main-menu__container' onClickLink={onClickLink} itemsList={rightItems} />
     </nav>
   )
 }
