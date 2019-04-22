@@ -89,6 +89,14 @@
   }
 
 }
+@media only screen and (max-width: 601px) {
+  .preregister-block__motivation-wrapper {
+    padding: 0 !important;
+  }
+  .preregister-block__motivation {
+    margin-bottom: .75rem;
+  }
+}
 
 @media only screen and (max-width: 550px) {
   .header-title__2 {

@@ -5,3 +5,15 @@
   border: none;
   transition: all .5s ease-in-out;
 }
+.form-filed-block {
+  display: block;
+  position: relative;
+}
+.form-fiel-block__input {
+  width: 100%;
+  display: block;
+  padding: .5rem;
+  border: 1px solid #afafaf;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+}
