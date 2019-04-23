@@ -18,6 +18,7 @@ const Layout = ({ children }) => (
           siteMetadata {
             title
             lang
+            description
           }
         }
       }
@@ -25,10 +26,10 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet>
-          <html lang={data.site.siteMetadata.lang} />
+          <html lang={data.site.siteMetadata.lang} dir='ltr' />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        {children}
+          { children }
         <Footer />
       </>
     )}

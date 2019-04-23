@@ -23,8 +23,8 @@ const MainMenu = props => {
   ];
   const rightItems = [
     {
-      url: '/contact',
-      label: 'Nos Contactes',
+      url: '/nos-contacts',
+      label: 'Nos Contacts',
     },
     {
       url: '/preinscription',

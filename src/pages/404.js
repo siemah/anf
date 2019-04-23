@@ -18,7 +18,7 @@ const NotFoundPage = () => (
         <img src={http404} alt="la page n'existe pas" />
         <p>Oops! Cette page n'existe plus.</p>
         <Button id="btn">
-          <Link to='/' title="Retour ver la page d'accueil">
+          <Link to='/' title="Retour vers la page d'accueil">
             Mene moi vers la page d'accueil
           </Link>
         </Button>

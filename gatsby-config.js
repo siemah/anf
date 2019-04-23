@@ -1,9 +1,13 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 module.exports = {
   siteMetadata: {
     title: `Association National des Financiers`,
     description: `Association National des Financiers.`,
     author: `@siemah`,
     lang: 'fr-FR',
+    mapboxApiAccessToken: process.env.MAPBOX_API_ACCESS_TOKEN,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

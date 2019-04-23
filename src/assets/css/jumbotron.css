@@ -1,5 +1,8 @@
 .jumbotron {
   position: relative;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 .jumbotron.full {
   height: 100vh;
