@@ -1,0 +1,48 @@
+
+.page-404 {
+  height: 100vh;
+  width: 100%;
+  padding: 50px 10px 0 10px;
+  background-color: #eaeaea;
+  position: relative;
+  z-index: 20;
+}
+.page-404::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 100%;
+  background-image: url('../images/a-hero-grey.png');
+  z-index: -1;
+}
+.page-404 img {
+  display: inline-block;
+  max-width: 500px;
+}
+.page-404 p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.page-404 button#btn {
+  color: #681f1f !important;
+  padding: 0;
+  overflow: hidden;
+  height: initial;
+}
+.page-404 button a {
+  color: #ffffff;
+  background-color: #1e0c65;;
+  padding: .75rem 1.5rem;
+  display: block;
+  font-weight: 600;
+}
+
+.success-form img {
+  max-height: 200px;
+}
