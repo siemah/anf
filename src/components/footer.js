@@ -44,7 +44,7 @@ export default class Footer extends React.Component {
    */
    onScroll = e => {
      const mainMenu = $('.js-main-menu');
-     const mainMenuHeight = mainMenu.offsetHeight;
+     const mainMenuHeight = mainMenu !== undefined ? mainMenu.offsetHeight : 60;
      const windowScroll = window.scrollY;
 
      if( windowScroll > mainMenuHeight && mainMenu && !hasClass(mainMenu, 'shadow')) {

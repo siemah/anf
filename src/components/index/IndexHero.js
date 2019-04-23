@@ -14,16 +14,16 @@ const IndexHero = ({className='', ...rest}) => (
 
       <Container className="hero__header">
         <div>
-          <h1 className="hero__title">
+          <h1 className="hero__title opacity-0 js-slide-from-down" data-delay={0}>
             <span className="hero-title__wrapper">Association National des Financiers</span>
           </h1>
-          <Button className='hero__link p0' name='preinscription'>
+          <Button className='hero__link p0 opacity-0 js-slide-from-down' data-delay={1} name='preinscription'>
             <Link to='/preinscription' >Préinscription</Link>
           </Button>
         </div>
       </Container>
 
-      <div className="hero__media">
+      <div className="hero__media opacity-0 js-slide-from-down" data-delay={2}>
         <span></span>
       </div>
 

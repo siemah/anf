@@ -18,24 +18,24 @@ const PreinscriptionPage = () => (
         <Row>
           <Col s='12' m='6' l='7' className='preregister-block__motivation-wrapper'>
             <div className="preregister-block__motivation">
-              <h1 className="header_1">Pourquoi adhérer</h1>
+              <h1 className="header_1 opacity-0 js-slide-from-down" data-delay={0}>Pourquoi adhérer</h1>
               <ul className="list-block ml0">
-                <li className="list-item">Assister à l’assemblée générale annuelle </li>
-                <li className="list-item">Accéder à la revue de l’ANF</li>
-                <li className="list-item">Bénéficier de tarifs préférentiels pour tous les évènements organisés par l’ANF</li>
-                <li className="list-item">Disposer en accès libre à un fonds documentaire avec possibilités d’acquisition d’ouvrages en liaison avec la finance ou les métiers connexes.</li>
-                <li className="list-item">Recevoir les informations par mailing sur l’ensemble des activités de l’ANF</li>
+                <li className="list-item opacity-0 js-slide-from-down" data-delay={1}>Assister à l’assemblée générale annuelle </li>
+                <li className="list-item opacity-0 js-slide-from-down" data-delay={2}>Accéder à la revue de l’ANF</li>
+                <li className="list-item opacity-0 js-slide-from-down" data-delay={3}>Bénéficier de tarifs préférentiels pour tous les évènements organisés par l’ANF</li>
+                <li className="list-item opacity-0 js-slide-from-down" data-delay={4}>Disposer en accès libre à un fonds documentaire avec possibilités d’acquisition d’ouvrages en liaison avec la finance ou les métiers connexes.</li>
+                <li className="list-item opacity-0 js-slide-from-down" data-delay={5}>Recevoir les informations par mailing sur l’ensemble des activités de l’ANF</li>
               </ul>
             </div>
           </Col>
           <Col s='12' m='6' l='5' className="preregister-block__form-wrapper">
             <form action="#">
-              <Row>
+              <Row className="opacity-0 js-slide-from-down" data-delay={1}>
                 <Col s='12'>
                   <h2 className='center'>Préinscription</h2>
                 </Col>
               </Row>
-              <Row>
+              <Row className="opacity-0 js-slide-from-down" data-delay={1.5}>
                 <Col s='12' m='6'>
                   <FormField name='nom' placeholder='Votre Nom' label='Nom*' />
                 </Col>
@@ -43,7 +43,7 @@ const PreinscriptionPage = () => (
                   <FormField name='prenom' placeholder='Votre Prénom' label='Prénom*' />
                 </Col>
               </Row>
-              <Row>
+              <Row className="opacity-0 js-slide-from-down" data-delay={2}>
                 <Col s='12' m='6'>
                   <FormField name='date-de-naissance' type='date' placeholder='JJ/MM/AAAA' label='Date De Naissance*' />
                 </Col>
@@ -51,7 +51,7 @@ const PreinscriptionPage = () => (
                   <FormField name='lieu-de-naissance' placeholder='Cite 20 Aout 56' label='Lieu De Naissance*' />
                 </Col>
               </Row>
-              <Row>
+              <Row className="opacity-0 js-slide-from-down" data-delay={2.5}>
                 <Col s='12' m='6'>
                   <FormField name='profession' placeholder='Manager, Professeur ..' label='Votre Profession*' />
                 </Col>
@@ -59,17 +59,17 @@ const PreinscriptionPage = () => (
                   <FormField name='employeur' placeholder="Employeur (nom d'entreprise)" label='Employeur*' />
                 </Col>
               </Row>
-              <Row>
+              <Row className="opacity-0 js-slide-from-down" data-delay={3}>
                 <Col s='12'>
                   <FormField name='adresse-professionelle' placeholder='Ben Aknoun, alger' label='Adresse Professionelle*' />
                 </Col>
               </Row>
-              <Row>
+              <Row className="opacity-0 js-slide-from-down" data-delay={3.5}>
                 <Col s='12'>
                   <FormField name='diplome' placeholder="Doctorat En Economie étranger" label='Diplôme Et/Ou Titre*' />
                 </Col>
               </Row>
-              <Row>
+              <Row className="opacity-0 js-slide-from-down" data-delay={3.5}>
                 <Col s='12'>
                   <label htmlFor="terms">
                     <input id={'terms'} type='checkbox' className="form-field__checkbox" value='1' />
