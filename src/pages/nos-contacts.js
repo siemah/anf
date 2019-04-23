@@ -18,24 +18,24 @@ const OurContactsPage = ({ data }) => {
         <Container>
           <Row className="mb0">
             <Col s='12'>
-              <h1 className="hero__title">Nos Contacts</h1>
+              <h1 className="hero__title opacity-0 js-slide-from-down" data-delay={0}>Nos Contacts</h1>
             </Col>
           </Row>
           <Row  className="mb0">
             <Col s='12' m='6' l='5'>
-              <p style={{marginBottom: '.5rem'}}>N'hesitez pas de nous cantactez. Nous somme en votre service en tous les moments.</p>
+              <p className='opacity-0 js-slide-from-down' data-delay={1} style={{marginBottom: '.5rem'}}>N'hesitez pas de nous cantactez. Nous somme en votre service en tous les moments.</p>
             </Col>
             <Col s='12' m='6' l='5'>
               <ul className="list-block ml0 pl0">
-                <li className="lite-item mb0"><span role="img" aria-label='phone'>📱</span> Sur Téléphone: <a href="tel:0213556100010">0 556 100 010</a></li>
-                <li className="lite-item mb0"><span role="img" aria-label='email'>📧</span> Par Email: <a href="mailto:contact@anf.com">contact@anf.com</a></li>
-                <li className="lite-item mb0"><span role="img" aria-label='location indicator'>📍</span> Adresse: <a target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/Centre+Culturel+Arezki+Taboudoucht/@36.7557197,3.0139383,15z/data=!4m5!3m4!1s0x0:0x5ab96a806a174819!8m2!3d36.7557197!4d3.0139383">Centre Culturel Arezki Taboudoucht – Ben Aknoun, Alger</a></li>
+                <li className="lite-item mb0 opacity-0 js-slide-from-down" data-delay={1}><span role="img" aria-label='phone'>📱</span> Sur Téléphone: <a href="tel:0213556100010">0 556 100 010</a></li>
+                <li className="lite-item mb0 opacity-0 js-slide-from-down" data-delay={1.5}><span role="img" aria-label='email'>📧</span> Par Email: <a href="mailto:contact@anf.com">contact@anf.com</a></li>
+                <li className="lite-item mb0 opacity-0 js-slide-from-down" data-delay={2}><span role="img" aria-label='location indicator'>📍</span> Adresse: <a target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/Centre+Culturel+Arezki+Taboudoucht/@36.7557197,3.0139383,15z/data=!4m5!3m4!1s0x0:0x5ab96a806a174819!8m2!3d36.7557197!4d3.0139383">Centre Culturel Arezki Taboudoucht – Ben Aknoun, Alger</a></li>
               </ul>
             </Col>
           </Row>
           <Row  className="mb0">
             <Col s='12'>
-              <div className="map-block">
+              <div className="map-block opacity-0 js-slide-from-down" data-delay={2.5}>
                 <Map
                   mapboxApiAccessToken={data.site.siteMetadata.mapboxApiAccessToken} />
               </div>
