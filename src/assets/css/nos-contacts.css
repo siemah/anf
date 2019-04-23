@@ -18,8 +18,8 @@ a {
   border: 1px solid #1e0c65;
 }
 
-@media only screen and (max-width: 450px) {
-  .jumbotron {
+@media only screen and (max-width: 450px), only screen and (max-height: 550px) {
+  .contacts-hero{
     height: auto !important;
     padding-bottom: 2rem;
   }
