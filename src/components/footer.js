@@ -88,6 +88,10 @@ export default class Footer extends React.Component {
   }
 
   componentDidMount(){
+    if( typeof window !== `undefined` ) {
+      window.scrollTo(0,10);
+      setTimeout(()=> {window.scrollTo(0,0)}, 40);
+    }
     this.addListener(window, "scroll", this.onScroll);
   }
 
