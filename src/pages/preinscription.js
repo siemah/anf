@@ -43,6 +43,14 @@ const PreinscriptionPage = () => (
                   <FormField name='prenom' placeholder='Votre Prénom' label='Prénom*' />
                 </Col>
               </Row>
+              <Row className="opacity-0 js-slide-from-down" data-delay={1.75}>
+                <Col s='12' l='6'>
+                  <FormField name='tel' placeholder='0 556 100 010' label='Numéro de tél*' />
+                </Col>
+                <Col s='12' l='6'>
+                  <FormField name='email' placeholder='nom-adresse@domain.com' label='Adresse email*' />
+                </Col>
+              </Row>
               <Row className="opacity-0 js-slide-from-down" data-delay={2}>
                 <Col s='12' m='6'>
                   <FormField name='date-de-naissance' type='date' placeholder='JJ/MM/AAAA' label='Date De Naissance*' />
