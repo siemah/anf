@@ -947,6 +947,9 @@ a, button {
   transform: translateY(-50%);
   color: inherit;
 }
+.inline-block {
+  display: inline-block;
+}
 
 /**** ANIMATION *********/
 .slideUp {

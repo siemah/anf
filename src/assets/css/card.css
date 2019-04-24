@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+  border: 1px solid #1e0c65;
+  clear: both;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+  color: #1e0c65;
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+.card__image-block {
+  position: relative;
+  height: 100%;
+  width: 80px;
+  border-right: 1px solid #1e0c65;
+}
+.card__image {
+  margin: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+.card__image-block,
+.card__action-block {
+  display: inline-block;
+}
+.card__action-block {
+  padding: 0 .5rem;
+}
+.card__title {
+  font-size: 20px;
+  margin-bottom: .5rem;
+}

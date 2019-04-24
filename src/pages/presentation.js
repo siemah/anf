@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import About from '../components/index/About'
 import Jumbotron from '../components/widgets/Jumbotron'
+import Organisation from '../components/presentation/Organisation'
 import { Container, Row, Col } from '../components/layout-components/grid'
 
 import '../assets/css/presentation.css';
@@ -18,8 +19,7 @@ const PresentationPage = (props) => {
         className='presentation-hero skew-section-after'
         theme='dark'
         size='semi'
-        nextElementId='about'
-        >
+        nextElementId='about'>
         <Container>
           <h1 className="hero__title capitalize center">à propos de l'Association National des Financiers</h1>
         </Container>
@@ -49,6 +49,7 @@ const PresentationPage = (props) => {
           </Row>
         </About>
       </div>
+      <Organisation />
     </Layout>
   )
 }
