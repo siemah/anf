@@ -27,7 +27,7 @@ const NetworkSection = ({className='', ...rest}) => (
         </Col>
         <Col s="12" className="mt-2 opacity-0 js-slide-from-down" data-delay={2}>
           <Button name='contact' className='network-block__link button capitalize right'>
-            <Link to='/contactez-nous'>contactez Nous</Link>
+            <Link to='/preinscription'>Je veux m'inscrire</Link>
           </Button>
         </Col>
       </Row>
@@ -67,7 +67,7 @@ const NetworkSection = ({className='', ...rest}) => (
       <Row className='mt-2'>
         <p>N'hésitez pas de nous catactez pour dire un petit salutation et autre.</p>
         <Button name='contact' className='network-block__link button pulse capitalize'>
-          <Link to='/contactez-nous'>contactez Nous</Link>
+          <Link to='/nos-contacts'>contactez Nous</Link>
         </Button>
       </Row>
 

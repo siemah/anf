@@ -24,8 +24,8 @@ const About = ({className='', ...rest}) => (
         </p>
       </Col>
       <Col s='12' className='mt-2 opacity-0 js-slide-from-down' data-delay={2}>
-        <Button className='right' name='button' style={{backgroundColor: '#1e0c65',}}>
-          <Link to='/a-propos-anf' style={{color: '#ffffff', display: 'block'}}>voir plus</Link>
+        <Button className='right capitalize' name='button' style={{backgroundColor: '#1e0c65',}}>
+          <Link to='/presentation' style={{color: '#ffffff', display: 'block'}}>savoir plus sur ANF</Link>
         </Button>
       </Col>
     </Row>
