@@ -9,16 +9,16 @@ import { $, hasClass, addClass, removeClass } from '../../utils/domTools';
 const MainMenu = props => {
   const centerItems = [
     {
-      url: '/',
-      label: 'Accueil',
-    },
-    {
       url: '/presentation',
       label: 'Présentation',
     },
     {
       url: '/structure',
       label: 'Structure',
+    },
+    {
+      url: '/telechargement-et-legislation',
+      label: 'Téléchargement',
     },
   ];
   const rightItems = [
