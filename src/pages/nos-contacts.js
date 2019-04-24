@@ -37,7 +37,8 @@ const OurContactsPage = ({ data }) => {
             <Col s='12'>
               <div className="map-block opacity-0 js-slide-from-down" data-delay={2.5}>
                 <Map
-                  mapboxApiAccessToken={data.site.siteMetadata.mapboxApiAccessToken} />
+                  mapboxApiAccessToken={data.site.siteMetadata.mapboxApiAccessToken}
+                  label='ANF Siège' />
               </div>
             </Col>
           </Row>

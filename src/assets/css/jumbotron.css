@@ -15,6 +15,9 @@
   background-color: #1e0c65;
   color: #ffffff;
 }
+.theme-jumbotron__dark .hero__title {
+  color: #ffffff;
+}
 .jumbotron__slide-down-arrrow {
   position: absolute;
   bottom: 60px;

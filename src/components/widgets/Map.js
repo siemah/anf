@@ -18,13 +18,14 @@ class Map extends React.Component {
   };
 
   render() {
+    let { mapboxApiAccessToken } = this.props;
     return (
       <ReactMapGL
         {...this.state.viewport}
         onViewportChange={(viewport) => this.setState({viewport})}
-        mapboxApiAccessToken={this.props.mapboxApiAccessToken}
+        mapboxApiAccessToken={mapboxApiAccessToken}
       >
-        <Marker latitude={36.7557197} longitude={3.0139383} offsetLeft={-20} offsetTop={-10}>
+        <Marker latitude={36.7557197} longitude={3.0139383} offsetLeft={-20} offsetTop={-10} className='center'>
           <img src={LocationImg} height='35' alt="Association National des Financiers est ici"/>
         </Marker>
       </ReactMapGL>
@@ -34,6 +35,7 @@ class Map extends React.Component {
 
 Map.propTypes = {
   className: PropTypes.string,
+  label: PropTypes.string,
   mapboxApiAccessToken: PropTypes.string.isRequired,
 }
 
