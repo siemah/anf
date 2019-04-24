@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import { Container, Row, Col } from '../layout-components/grid';
 import { Button } from '../layout-components/form';
 
-const About = ({className='', ...rest}) => (
+const About = ({className='', showLink=true, children, ...rest}) => (
   <div className={`about-block ${className}`} {...rest}>
   <Container>
     <Row className='mb0'>
@@ -23,17 +23,26 @@ const About = ({className='', ...rest}) => (
           dispositions de la loi 12-06 du 12 janvier 2012 relative aux associations.
         </p>
       </Col>
-      <Col s='12' className='mt-2 opacity-0 js-slide-from-down' data-delay={2}>
-        <Button className='right capitalize' name='button' style={{backgroundColor: '#1e0c65',}}>
-          <Link to='/presentation' style={{color: '#ffffff', display: 'block'}}>savoir plus sur ANF</Link>
-        </Button>
-      </Col>
+      {
+        showLink && (
+          <Col s='12' className='mt-2 opacity-0 js-slide-from-down' data-delay={2}>
+            <Button className='right capitalize' name='button' style={{backgroundColor: '#1e0c65',}}>
+              <Link to='/presentation' style={{color: '#ffffff', display: 'block'}}>savoir plus sur ANF</Link>
+            </Button>
+          </Col>
+        )
+      }
     </Row>
+    {
+      children
+    }
   </Container>
   </div>
 )
 
 About.propTypes = {
   className: PropTypes.string,
+  showLink: PropTypes.boolean,
+  children: PropTypes.element,
 }
 export default About;
