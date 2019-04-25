@@ -21,7 +21,7 @@ const Card = ({className='', imageSrc=null, alt='', title, text}) => (
 
 Card.propTypes = {
   className: PropTypes.string,
-  imageSrc: PropTypes.element,
+  imageSrc: PropTypes.string,
   alt: PropTypes.string,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,

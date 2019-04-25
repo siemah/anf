@@ -42,7 +42,7 @@ const About = ({className='', showLink=true, children, ...rest}) => (
 
 About.propTypes = {
   className: PropTypes.string,
-  showLink: PropTypes.boolean,
+  showLink: PropTypes.bool,
   children: PropTypes.element,
 }
 export default About;
