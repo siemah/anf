@@ -5,8 +5,12 @@
   height: 100%;
   overflow: hidden;
   border-radius: 3px;
-  color: #1e0c65;
+  color: inherit;
   box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  text-align: left;
+}
+.card_withou-image {
+  padding: .5rem;
 }
 .card__image-block {
   position: relative;
@@ -19,14 +23,25 @@
   width: 100%;
   vertical-align: middle;
 }
-.card__image-block,
 .card__action-block {
-  display: inline-block;
-}
-.card__action-block {
-  padding: 0 .5rem;
+  /* padding: .75rem; */
+  padding:5px;
 }
 .card__title {
   font-size: 20px;
   margin-bottom: .5rem;
+}
+.card__text {
+  margin-bottom: 0;
+  font-size: 17px;
+  color: #323232;
+}
+@media only screen and (max-width: 400px) {
+  .card__image-block {
+    width: 65px;
+  }
+  .card__action-block {
+    padding: 0;
+    padding-left: 2px;
+  }
 }

@@ -53,3 +53,69 @@
   color: #000000;
   font-size: 17px;
 }
+
+.organisation-block {
+  color: #1e0c65;
+  padding-top: 2rem;
+}
+/************************
+    Organisation
+************************/
+.centered-dot,
+.centered-dot-middle {
+  position: relative;
+  /* padding-bottom: 20px; */
+}
+
+.centered-dot::before,
+.centered-dot-middle::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e0c65;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.centered-dot-middle::before {
+  bottom: auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-dot .col,
+.centered-dot-middle .col {
+  position: relative;
+}
+
+.centered-dot-middle > .col:first-child::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -20px;
+  height: 130%;
+  width: 2px;
+  background-color: #1e0c65;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

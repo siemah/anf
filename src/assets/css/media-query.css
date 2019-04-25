@@ -96,6 +96,23 @@
   .preregister-block__motivation {
     margin-bottom: .75rem;
   }
+  /******************
+      presentation
+  *****************/
+  .centered-dot::before,
+  .centered-dot-middle::before,
+  .centered-dot-middle > .col:first-child::before {
+    display: none;
+  }
+  .organisation-block .col {
+    margin-bottom: 20px;
+  }
+  .col .card {
+    display: block !important;
+  }
+  .card_primary .card__action-block{
+    padding-top: .75rem;
+  }
 }
 
 @media only screen and (max-width: 550px) {
