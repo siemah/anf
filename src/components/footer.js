@@ -6,6 +6,7 @@ import BrandLogo from './widgets/BrandLogo';
 import { $, hasClass, addClass, removeClass, isInViewport } from '../utils/domTools';
 
 import '../assets/css/footer.css';
+import AHeroBG from '../assets/images/a-hero-grey.png';
 
 export default class Footer extends React.Component {
 
@@ -89,15 +90,16 @@ export default class Footer extends React.Component {
 
   componentDidMount(){
     if( typeof window !== `undefined` ) {
-      window.scrollTo(0,10);
-      setTimeout(()=> {window.scrollTo(0,0)}, 40);
+      console.log(window.offsetTop);
+      window.scrollTo(0,window.pageYOffset+1);
+      setTimeout(()=> {window.scrollTo(0,window.pageYOffset)}, 40);
     }
     this.addListener(window, "scroll", this.onScroll);
   }
 
   render() {
     return(
-      <div className="footer footer-block center">
+      <div className="footer footer-block center" style={{backgroundImage: `url(${AHeroBG})`}}>
         <div className="footer-block__brand-block">
           <BrandLogo className='footer-block__brand-logo' />
           <h2 className="footer-block__brand-name mb0">
@@ -120,10 +122,10 @@ export default class Footer extends React.Component {
             </li>
           </ul>
         </nav>
-        <div className={"copyright"}>
+        <div className={"copyright container"}>
           <div className={"left"}>© 2019 A.N.F. Tous les droits sont réservés. </div>
           <div className={'right'}>
-            Designed by
+            Designed by &nbsp;
             <a href="https://dayenio.ml" >DayenIO</a></div>
         </div>
       </div>

@@ -13,10 +13,6 @@ const MainMenu = props => {
       label: 'Présentation',
     },
     {
-      url: '/structure',
-      label: 'Structure',
-    },
-    {
       url: '/telechargement-et-legislation',
       label: 'Téléchargement',
     },

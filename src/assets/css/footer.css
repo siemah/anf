@@ -1,6 +1,9 @@
 .footer-block {
   background-color: #ffffff;
   padding-top: 2rem;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #efefef;
 }
 
 .footer-block__brand-name {
@@ -43,4 +46,22 @@
   height: 30px;
   font-size: 17px;
   padding: 0 .5rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .footer-block__creadcrumb-item {
+    line-height: 30px;
+    height: 30px;
+  }
+  .footer-block__creadcrumb-link {
+    padding: 0;
+    padding-left: 5px;
+    font-size: 14px;
+  }
+  .footer-block__creadcrumb-link::after {
+    /* display: none; */
+    right: -4px;
+    height: 3px;
+    width: 3px;
+  }
 }
