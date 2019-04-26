@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import { Row, Col } from '../components/layout-components/grid';
 import { Button } from '../components/layout-components/form';
@@ -32,7 +33,7 @@ const IndexPage = () => (
               <li data-delay={2} className={'list__item mb0 opacity-0 js-slide-from-down'}><span className='hero-title__wrapper'>Accéder à la revue de l’ANF</span></li>
             </ul>
             <Button data-delay={3} className='description__button-wrapper p0 opacity-0 js-slide-from-down' name='preinscription'>
-              <Link to='/preinscription' title='Preinscrire ici' className='button__material description__link-button mt0' >Préinscrire et Adhesion</Link>
+              <AniLink paintDrip hex="#0ab587"  to='/preinscription' title='Preinscrire ici' className='button__material description__link-button mt0' >Préinscrire et Adhesion</AniLink>
             </Button>
           </div>
         </Col>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import { Container, Row, Col } from '../layout-components/grid';
 import { Button } from '../layout-components/form';
@@ -27,7 +28,9 @@ const About = ({className='', showLink=true, children, ...rest}) => (
         showLink && (
           <Col s='12' className='mt-2 opacity-0 js-slide-from-down' data-delay={2}>
             <Button className='right capitalize' name='button' style={{backgroundColor: '#1e0c65',}}>
-              <Link to='/presentation' style={{color: '#ffffff', display: 'block'}}>savoir plus sur ANF</Link>
+              <AniLink 
+                paintDrip hex='#1e0c65'
+                to='/presentation' style={{color: '#ffffff', display: 'block'}}>savoir plus sur ANF</AniLink>
             </Button>
           </Col>
         )

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import PropTypes from 'prop-types';
 
 import Jumbotron from '../widgets/Jumbotron'
@@ -18,7 +19,7 @@ const IndexHero = ({className='', ...rest}) => (
             <span className="hero-title__wrapper">Association National des Financiers</span>
           </h1>
           <Button className='hero__link p0 opacity-0 js-slide-from-down' data-delay={1} name='preinscription'>
-            <Link to='/preinscription' >Préinscription</Link>
+            <AniLink paintDrip hex='#1e0c65' to='/preinscription' >Préinscription</AniLink>
           </Button>
         </div>
       </Container>

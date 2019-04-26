@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import { Container, Row, Col } from '../layout-components/grid';
 import { Button } from '../layout-components/form';
@@ -27,7 +28,7 @@ const NetworkSection = ({className='', ...rest}) => (
         </Col>
         <Col s="12" className="mt-2 opacity-0 js-slide-from-down" data-delay={2}>
           <Button name='contact' className='network-block__link button capitalize right'>
-            <Link to='/preinscription'>Je veux m'inscrire</Link>
+            <AniLink paintDrip hex="#0ab587" to='/preinscription'>Je veux m'inscrire</AniLink>
           </Button>
         </Col>
       </Row>
@@ -67,7 +68,7 @@ const NetworkSection = ({className='', ...rest}) => (
       <Row className='mt-2'>
         <p>N'hésitez pas de nous catactez pour dire un petit salutation et autre.</p>
         <Button name='contact' className='network-block__link button pulse capitalize'>
-          <Link to='/nos-contacts'>contactez Nous</Link>
+          <AniLink paintDrip hex="#0ab587" to='/nos-contacts'>contactez Nous</AniLink>
         </Button>
       </Row>
 
