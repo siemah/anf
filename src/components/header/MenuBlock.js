@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 //import { Link } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
@@ -19,5 +20,11 @@ const MainBlock = ({ className, itemsList,  onClickLink=() => {}, ...rest }) => 
     }
   </ul>
 )
+
+MainBlock.propTypes = {
+  className: PropTypes.string,
+  itemsList: PropTypes.array.isRequired,
+  onClickLink: PropTypes.func,
+}
 
 export default MainBlock;
