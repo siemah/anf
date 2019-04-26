@@ -32,6 +32,13 @@ module.exports = {
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    //  add transition when user change pages
+    {
+      resolve: 'gatsby-plugin-transition-link',
+      options: {
+        layout: require.resolve(`./src/layout`),
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
