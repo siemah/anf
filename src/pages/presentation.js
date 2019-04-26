@@ -3,7 +3,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Organisation from '../components/presentation/Organisation'
+import Organisation from '../components/presentation/organisation'
 import Hero from '../components/presentation/Hero'
 import AboutSection from '../components/presentation/AboutSection'
 
