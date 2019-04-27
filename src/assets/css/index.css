@@ -72,6 +72,35 @@
   z-index: 1;
 }
 
+
+/***********************
+      AboutBlock
+************************/
+.about-block{
+  background-color: #f4f4f4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 10;
+  color: #000000;
+  padding-top: 10rem;
+}
+.about-block::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  z-index: -1;
+  background-image: url("../images/a-hero-grey.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #eaeaea;
+}
+
 /************************
       NetworkSection
 ************************/
