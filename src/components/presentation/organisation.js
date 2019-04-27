@@ -24,14 +24,14 @@ const Organisation = props => (
         <Card
           title='M. CHEMAM Y Arafat'
           text="1er Vice Président"
-          className='inline-block'
+          className='inline-block organisation-card__theme_full'
         />
       </Col>
       <Col s='12' m='6' className='center opacity-0 js-slide-from-down' data-delay={0.5}>
         <Card
           title='M. BOUGUESBA Hatem'
           text="2ème Vice Président"
-          className='inline-block'
+          className='inline-block organisation-card__theme_full'
         />
       </Col>
     </Row>
@@ -40,37 +40,38 @@ const Organisation = props => (
         <Card
           title='M. BAKHA Tahar'
           text="Sécrétaire General"
-          className='inline-block'
+          className='inline-block organisation-card__theme_full'
         />
       </Col>
       <Col s='12' m='6' className='center opacity-0 js-slide-from-down' data-delay={1}>
         <Card
           title='M. KHELACI Abed Elhakim'
           text="Trésorier"
-          className='inline-block'
+          className='inline-block organisation-card__theme_full'
         />
       </Col>
     </Row>
-    <Row>
+    <Row style={{position:'relative'}}>
+      <hr class="bar_theme_half mb0" /> 
       <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.4}>
         <Card
           title='M. NEDJAR Djamel'
           text="Mambre"
-          className='inline-block'
+          className='inline-block organisation-card__theme_full'
         />
       </Col>
       <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.5}>
         <Card
           title='Mr. MOUMENI Redouan'
           text="Mambre"
-          className='inline-block'
+          className='inline-block organisation-card__theme_full'
         />
       </Col>
       <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.6}>
         <Card
           title='Mr. LAROUM Hamid'
           text="Mambre"
-          className='inline-block'
+          className='inline-block organisation-card__theme_full'
         />
       </Col>
     </Row>

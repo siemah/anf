@@ -15,6 +15,10 @@
   background-color: #1e0c65;
   color: #ffffff;
 }
+.theme-jumbotron__grey {
+  background-color: #efefef;
+  color: #1e0c65;
+}
 .theme-jumbotron__dark .hero__title {
   color: #ffffff;
 }

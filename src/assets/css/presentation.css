@@ -61,6 +61,20 @@
 /************************
     Organisation
 ************************/
+.bar_theme_half {
+  position: absolute;
+  top: -15px; 
+  left: 50%;  
+  right: 50%; 
+  transform: translateX(-50%);
+  background-color: #1e0c65;
+  height: 2px;  
+  width: 60%;
+}
+.organisation-card__theme_full {
+  width: 100%;
+  max-width:  300px;
+}
 .centered-dot,
 .centered-dot-middle {
   position: relative;

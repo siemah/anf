@@ -66,8 +66,8 @@ const NetworkSection = ({className='', ...rest}) => (
       </Row>
 
       <Row className='mt-2'>
-        <p>N'hésitez pas de nous catactez pour dire un petit salutation et autre.</p>
-        <Button name='contact' className='network-block__link pulse capitalize'>
+        <p className='opacity-0 js-slide-from-down' data-delay={.5}>N'hésitez pas de nous catactez pour dire un petit salutation et autre.</p>
+        <Button name='contact' className='network-block__link pulse capitalize opacity-0 js-slide-from-down' data-delay={.7}>
           <AniLink paintDrip hex="#0ab587" to='/nos-contacts'>contactez Nous</AniLink>
         </Button>
       </Row>
