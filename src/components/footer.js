@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import BrandLogo from './widgets/BrandLogo';
 
-import { $, hasClass, addClass, removeClass, isInViewport } from '../utils/domTools';
+import { $, addCss, hasClass, addClass, removeClass, isInViewport } from '../utils/domTools';
 
 import '../assets/css/footer.css';
 import AHeroBG from '../assets/images/a-hero-grey.png';
@@ -73,12 +73,15 @@ export default class Footer extends React.Component {
      const $slideFromDown = $('.js-slide-from-down', true);
      if( $slideFromDown.length ) {
        $slideFromDown.forEach( (elem, i) => {
-         if( isInViewport(elem) ) {
+         let delay = 0;
+         if( isInViewport(elem) && hasClass(elem, 'js-slide-from-down') && !hasClass(elem, 'slideFromDown') ) {
+           delay = elem.getAttribute('data-delay') * 500
+           removeClass(elem, 'js-slide-from-down');
+           addClass(elem, 'slideFromDown');
+           addCss(elem, 'animation-delay', `${delay}ms`)
            setTimeout(() => {
              removeClass(elem, 'opacity-0');
-             removeClass(elem, 'js-slide-from-down');
-             addClass(elem, 'slideFromDown');
-           }, elem.getAttribute('data-delay') * 500)
+           }, delay)
          }
        });
      }

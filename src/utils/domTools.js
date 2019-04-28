@@ -54,7 +54,9 @@ export const isInViewport = (elem) => {
  * @name addCss
  * add some css using javascript
  */
- export const addCss = (elem, cssAttribute, cssValue) => elem.style[cssAttribute] = cssValue;
+ export const addCss = (elem, cssAttribute, cssValue) => {
+   elem.style[cssAttribute] = cssValue;
+ }
 
 /**
  * @name $
