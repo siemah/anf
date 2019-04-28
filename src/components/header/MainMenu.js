@@ -13,6 +13,10 @@ const MainMenu = props => {
       label: 'Présentation',
     },
     {
+      url: '/mot-de-president',
+      label: 'Président',
+    },
+    {
       url: '/telechargement-et-legislation',
       label: 'Téléchargement',
     },

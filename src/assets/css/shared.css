@@ -19,7 +19,8 @@
   margin-bottom: 20px;
 }
 
-.row:after {
+.row:after,
+.clearfix {
   content: "";
   display: table;
   clear: both;
@@ -950,7 +951,6 @@ a, button {
 .inline-block {
   display: inline-block;
 }
-
 /**** ANIMATION *********/
 .slideUp {
   animation: slideUp .5s ease-in;

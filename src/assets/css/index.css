@@ -132,7 +132,7 @@
 }
 .network-block__link {
   margin-left: .75rem;
-  background-color: #0ab587;
+  background-color: #0ab587 !important;
   padding: 0;
 }
 .network-block__link a {

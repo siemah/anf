@@ -34,7 +34,7 @@
   background-size: contain;
   z-index: 10;
 }
-.hero__media::before {
+.president-hero .hero__media::before {
   content: "";
   position: absolute;
   left: 0;
@@ -63,7 +63,36 @@
 .content-block{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	background-color: #efefef;
+	color: #281b5a;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: auto 100%;
 }
 .content-block__image {
 	height: 200px;
+	min-height: 200px;
+}
+.content__image {
+	max-height: 250px;
+	margin-right: .75rem;
+}
+.first-p {
+	overflow: auto;
+	padding-top: .5rem;
+}
+.first-p::first-letter {
+	padding-left: 1rem;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: #1e0c65;
+}
+.article-block__author,
+.article-block__position {
+	color: #1e0c65;
+	font-size: 30px;
+	margin-bottom: .5rem;
+}
+.article-block__position {
+	font-size: 25px;
 }
