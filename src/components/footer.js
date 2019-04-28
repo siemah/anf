@@ -57,7 +57,8 @@ export default class Footer extends React.Component {
      const $jsSlideUpElem = $('.js-slideUp-block');
      if( $jsSlideUpElem && window.location.pathname === '/' && isInViewport($jsSlideUpElem) ){
        const $jsSlideUpElems = $('.js-slideUp', true);
-       $jsSlideUpElems.forEach( elem => {
+       for (let i = 0; i < $jsSlideUpElems.length; i++) {
+         const elem = $jsSlideUpElems[i];
          // if( isInViewport(elem)) {
            const delay = elem.getAttribute('data-delay') * 500;
            setTimeout(() => {
@@ -66,13 +67,14 @@ export default class Footer extends React.Component {
              removeClass(elem, 'js-slideUp');
            }, delay);
          // }
-       })
+       }
        removeClass($jsSlideUpElem, 'js-slideUp-block');
      }
 
      const $slideFromDown = $('.js-slide-from-down', true);
      if( $slideFromDown.length ) {
-       $slideFromDown.forEach( (elem, i) => {
+       for (let i = 0; i < $slideFromDown.length; i++) {
+         const elem = $slideFromDown[i];
          let delay = 0;
          if( isInViewport(elem) && hasClass(elem, 'js-slide-from-down') && !hasClass(elem, 'slideFromDown') ) {
            delay = elem.getAttribute('data-delay') * 500
@@ -83,7 +85,7 @@ export default class Footer extends React.Component {
              removeClass(elem, 'opacity-0');
            }, delay)
          }
-       });
+       }
      }
    }
 
