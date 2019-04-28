@@ -1,6 +1,6 @@
 import React from 'react'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-import { Link } from 'gatsby'
 import { Container } from '../components/layout-components/grid'
 import { Button } from '../components/layout-components/form'
 import Layout from '../components/layout'
@@ -14,11 +14,13 @@ const SuccessPreRegisterPage = () => (
     <SEO title="Succés de Préinscription" />
     <Container className="page-404 success-form center">
       <img src={high5} alt='five hands' />
-      <p>Thank you for contacting us. We will reply you very soon, have a nice day.</p>
+      <p>Merci pour votre préinscription nous vous contacterons le plustôt possible.</p>
       <Button id="btn">
-        <Link to='/' title="DayenIO home page">
-          take me to the home page
-        </Link>
+        <AniLink
+          paintDrip hex="#1e0c65"
+          to='/' title="DayenIO home page">
+          Revenir à la page d'accueil
+        </AniLink>
       </Button>
     </Container>
   </Layout>
