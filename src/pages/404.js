@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -18,9 +18,11 @@ const NotFoundPage = () => (
         <img src={http404} alt="la page n'existe pas" />
         <p>Oops! Cette page n'existe plus.</p>
         <Button id="btn">
-          <Link to='/' title="Retour vers la page d'accueil">
+          <AniLink
+            paintDrip hex="#1e0c65"
+            to='/' title="Retour vers la page d'accueil">
             Mene moi vers la page d'accueil
-          </Link>
+          </AniLink>
         </Button>
       </Container>
     </Jumbotron>
