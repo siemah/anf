@@ -1,10 +1,13 @@
 .contacts-hero {
   background-color: #eaeaea;
-  padding-top: 2rem;
 }
+
 .hero__title {
   font-size: 50px;
   color: #1e0c65;
+}
+.contacts-hero .hero__title {
+  margin-top: 0.75rem;
 }
 
 a {
@@ -14,8 +17,17 @@ a {
 
 .map-block {
   overflow: hidden;
-  border-radius: 5px;
-  border: 1px solid #1e0c65;
+  position: relative;
+}
+.map-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 1000;
 }
 
 @media only screen and (max-width: 450px), only screen and (max-height: 550px) {

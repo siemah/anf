@@ -15,6 +15,11 @@ const OurContactsPage = ({ data }) => {
     <Layout>
       <SEO title="ANF Contacts" />
       <Jumbotron className='contacts-hero' style={{backgroundImage: `url(${BGImage})`}}>
+        <div className='map-block'>
+          <Map
+            mapboxApiAccessToken={data.site.siteMetadata.mapboxApiAccessToken}
+            label='ANF Siège' />
+        </div> 
         <Container>
           <Row className="mb0">
             <Col s='12'>
@@ -31,15 +36,6 @@ const OurContactsPage = ({ data }) => {
                 <li className="lite-item mb0 opacity-0 js-slide-from-down" data-delay={1.5}><span role="img" aria-label='email'>📧</span> Par Email: <a href="mailto:contact@anf.com">contact@anf.com</a></li>
                 <li className="lite-item mb0 opacity-0 js-slide-from-down" data-delay={2}><span role="img" aria-label='location indicator'>📍</span> Adresse: <a target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/Centre+Culturel+Arezki+Taboudoucht/@36.7557197,3.0139383,15z/data=!4m5!3m4!1s0x0:0x5ab96a806a174819!8m2!3d36.7557197!4d3.0139383">Centre Culturel Arezki Taboudoucht – Ben Aknoun, Alger</a></li>
               </ul>
-            </Col>
-          </Row>
-          <Row  className="mb0">
-            <Col s='12'>
-              <div className="map-block opacity-0 js-slide-from-down" data-delay={2.5}>
-                <Map
-                  mapboxApiAccessToken={data.site.siteMetadata.mapboxApiAccessToken}
-                  label='ANF Siège' />
-              </div>
             </Col>
           </Row>
         </Container>
