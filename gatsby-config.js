@@ -27,7 +27,7 @@ module.exports = {
         short_name: `ANF`,
         start_url: `/`,
         background_color: `#1e0c65`,
-        theme_color: `#ffffff`,
+        theme_color: `#1e0c65`,
         display: `minimal-ui`,
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
