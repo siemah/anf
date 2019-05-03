@@ -21,12 +21,20 @@ const DownloadsAndLegislationPage = ({ data: { allWordpressPost } }) => (
       <Container>
         <ul className="list-block center">
           {
-            allWordpressPost.edges.length &&
-            allWordpressPost.edges.map(({ node }) => (
-              <li className="list-item">
-                <a className="list-item__link" title={node.acf.file.title} href={node.acf.file.source_url}>{ node.title }</a>
-              </li>
-            ))
+            allWordpressPost.edges.length
+              ? allWordpressPost.edges.map(({ node }) => (
+                <li className="list-item" key={node.id}>
+                  <a
+                    className="list-item__link"
+                    target='_blank'
+                    rel="noopener noreferrer"
+                    title={node.acf.file.title}
+                    href={node.acf.file.source_url}>
+                    { node.title }
+                  </a>
+                </li>
+              ))
+              : <h2>Y'a pas des fichiers à téléchargies pour le moment</h2>
           }
         </ul>
       </Container>
@@ -44,6 +52,7 @@ export const pageQuery = graphql`
      edges {
        node {
          title
+         id
          acf {
            file {
              source_url
