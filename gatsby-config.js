@@ -39,6 +39,17 @@ module.exports = {
         layout: require.resolve(`./src/layout`),
       },
     },
+    // use wordpress to get the PDF files used on download page
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        baseUrl: process.env.WORDPRESS_BASEURL,
+        protocol: process.env.WORDPRESS_PROTOCOL,
+        hostingWPCOM: (process.env.WORDPRESS_WPCOM === false),
+        verboseOutput: process.env.WORDPRESS_VERBOSE,
+        useACF: process.env.USE_ACF,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
