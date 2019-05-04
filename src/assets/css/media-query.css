@@ -1,7 +1,5 @@
 @media only screen and (max-width: 1150px) {
-  .hero__title {
-    font-size: 70px !important;
-  }
+  
 }
 @media only screen and (max-width: 850px) {
   /********************
@@ -79,9 +77,6 @@
   ************************/
   .hero__header{
     width: 100% !important;
-  }
-  .hero__title {
-    font-size: 55px !important;
   }
   .hero-title__wrapper {
     background-color: #0ab587;

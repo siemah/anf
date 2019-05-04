@@ -34,6 +34,44 @@
   width: 30px;
   animation: slideUpDown 2s infinite;
 }
+/***************************
+    hero H1,H2 tags size
+**************************/
+.index-hero__title {
+  font-size: 5rem !important;
+  background-color: transparent !important;
+}
+/*****************************
+  shared & media query css
+*****************************/
+.hero__title.index-hero__title,
+.presentation-hero__title,
+.president-hero__title {
+  font-size: 4rem !important;
+}
+.downloads-hero__title {
+  font-size: 3rem;
+}
+.nos-contacts-hero__title {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 550px)  {
+  .hero__title.index-hero__title,
+  .presentation-hero__title,
+  .president-hero__title, {
+    font-size: 3rem !important;
+  }
+  .downloads-hero__title {
+    font-size: 2rem;
+  }
+
+}
+
+
+/***************
+  animation
+****************/
 
 @keyframes slideUpDown {
   0% {

@@ -10,7 +10,7 @@ const Hero = props => (
     size='semi'
     nextElementId='about'>
     <Container>
-      <h1 className="hero__title capitalize center">à propos de l'Association National des Financiers</h1>
+      <h1 className="hero__title presentation-hero__title capitalize center">à propos de l'Association National des Financiers</h1>
     </Container>
   </Jumbotron>
 )

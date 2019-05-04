@@ -14,7 +14,7 @@ const DownloadsAndLegislationPage = ({ data: { allWordpressPost } }) => (
     <SEO title="Préinscription et adhérer" />
     <Jumbotron className='downloads-hero skew-section-after' theme='dark' nextElementId='donwloads-items'>
       <Container className="downloads-block">
-        <h1 className="hero__title center">LEGISLATION & TEXTES REGLEMENTAIRES</h1>
+        <h1 className="hero__title downloads-hero__title center">LEGISLATION & TEXTES REGLEMENTAIRES</h1>
       </Container>
     </Jumbotron>
     <div className='donwloads-block' style={{backgroundImage: `url(${AHeroBG})`}} id='donwloads-items'>

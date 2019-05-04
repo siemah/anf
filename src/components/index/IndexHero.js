@@ -15,7 +15,7 @@ const IndexHero = ({className='', ...rest}) => (
 
       <Container className="hero__header">
         <div>
-          <h1 className="hero__title opacity-0 js-slide-from-down" data-delay={0}>
+          <h1 className="hero__title index-hero__title opacity-0 js-slide-from-down" data-delay={0}>
             <span className="hero-title__wrapper">Association National des Financiers</span>
           </h1>
           <Button className='hero__link p0 opacity-0 js-slide-from-down' data-delay={1} name='preinscription'>

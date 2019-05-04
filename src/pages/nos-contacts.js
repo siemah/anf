@@ -19,11 +19,11 @@ const OurContactsPage = ({ data }) => {
           <Map
             mapboxApiAccessToken={data.site.siteMetadata.mapboxApiAccessToken}
             label='ANF Siège' />
-        </div> 
+        </div>
         <Container>
           <Row className="mb0">
             <Col s='12'>
-              <h1 className="hero__title opacity-0 js-slide-from-down" data-delay={0}>Nos Contacts</h1>
+              <h1 className="hero__title nos-contacts-hero__title opacity-0 js-slide-from-down" data-delay={0}>Nos Contacts</h1>
             </Col>
           </Row>
           <Row  className="mb0">
