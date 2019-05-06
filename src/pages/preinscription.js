@@ -11,7 +11,6 @@ import BGImage from '../assets/images/preregister.svg';
 import '../assets/css/preinscription.css';
 
 const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
-  console.log(post);
   return (
     <Layout>
       <SEO title="Préinscription et adhérer" />
@@ -112,7 +111,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
 export const pageQuery = graphql`
   {
     wordpressPost(
-      categories: {elemMatch: {slug: {eq: "pdf"}}}
+      categories: {elemMatch: {slug: {eq: "terms"}}}
       slug: {regex: "/.?(formulaire)|(adhesion).?/ig"}
     ) {
       id
