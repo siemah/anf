@@ -100,7 +100,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                     }
                   </Col>
                   <Col s='12'>
-                    <Button className="button__material form__button_submit capitalize" name='envoyer'>Valider votre Préinscription </Button>
+                    <Button className="button__material form__button_submit capitalize" type='submit' name='envoyer'>Valider votre Préinscription </Button>
                   </Col>
                 </Row>
               </form>
