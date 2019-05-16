@@ -12,9 +12,9 @@ const Organisation = props => (
       <Col s='12' className='center opacity-0 js-slide-from-down' data-delay={0}>
         <Card
           imageSrc={DefaultImg}
-          alt="M. HADJAMMAR Med Akli Presedent de l'ANF"
-          title='M. HADJAMMAR Med Akli'
-          text="Presedent de l'ANF"
+          alt="M. HADJAMMAR Ferhat Presedent de l'ANF"
+          title='M. HADJAMMAR Ferhat'
+          text="Président de l'ANF"
           className='inline-block card_primary'
         />
       </Col>
@@ -52,25 +52,25 @@ const Organisation = props => (
       </Col>
     </Row>
     <Row style={{position:'relative'}}>
-      <hr class="bar_theme_half mb0" /> 
+      <hr class="bar_theme_half mb0" />
       <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.4}>
         <Card
           title='M. NEDJAR Djamel'
-          text="Mambre"
+          text="Membre"
           className='inline-block organisation-card__theme_full'
         />
       </Col>
       <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.5}>
         <Card
           title='Mr. MOUMENI Redouan'
-          text="Mambre"
+          text="Membre"
           className='inline-block organisation-card__theme_full'
         />
       </Col>
       <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.6}>
         <Card
           title='Mr. LAROUM Hamid'
-          text="Mambre"
+          text="Membre"
           className='inline-block organisation-card__theme_full'
         />
       </Col>

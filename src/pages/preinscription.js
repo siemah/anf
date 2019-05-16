@@ -74,8 +74,11 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                   </Col>
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={3.5}>
-                  <Col s='12'>
-                    <FormField name='diplome' placeholder="Doctorat En Economie étranger" label='Diplôme Et/Ou Titre*' />
+                  <Col s='12' m="6">
+                    <FormField name='diplome' placeholder="Doctorat En Economie étranger" label='Diplôme/Titre*' />
+                  </Col>
+                  <Col s='12' m="6">
+                    <FormField name='nationalite' placeholder="Algerienne" label='Nationalité*' />
                   </Col>
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={3.5}>
@@ -96,7 +99,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                     }
                   </Col>
                   <Col s='12'>
-                    <Button className="button__material form__button_submit capitalize" name='envoyer'>compléter la préinscription</Button>
+                    <Button className="button__material form__button_submit capitalize" name='envoyer'>Valider votre Préinscription </Button>
                   </Col>
                 </Row>
               </form>

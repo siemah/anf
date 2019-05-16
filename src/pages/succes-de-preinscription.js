@@ -14,7 +14,11 @@ const SuccessPreRegisterPage = () => (
     <SEO title="Succés de Préinscription" />
     <Container className="page-404 success-form center">
       <img src={high5} alt='five hands' />
-      <p>Merci pour votre préinscription nous vous contacterons le plustôt possible.</p>
+      <p>
+        Merci !
+        Votre Préinscription en ligne a été effectuée avec succès.
+        Un Email  vous sera transmis après traitement.
+      </p>
       <Button id="btn">
         <AniLink
           paintDrip hex="#1e0c65"

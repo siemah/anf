@@ -23,7 +23,7 @@ const PresidentPage = () => (
 	      <Container className="hero__header">
 	        <div>
 	          <h1 className="hero__title president-hero__title opacity-0 js-slide-from-down" data-delay={0}>
-	            <span className="hero-title__wrapper">Mot De Président De l'ANF</span>
+	            <span className="hero-title__wrapper">Mot Du Président De l'ANF</span>
 	          </h1>
 	        </div>
 	      </Container>

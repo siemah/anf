@@ -37,7 +37,7 @@ const NetworkSection = ({className='', ...rest}) => (
         <Col className="network-block_left opacity-0 js-slide-from-down" data-delay={3} s='12' m='6'>
           <h2 className="network-block__title capitalize">Réseau de l’ANF</h2>
           <p className="network-block__description">
-            Un réseau Régional est mis en place composé de 4 conseils régionaux répartis comme suit :
+            Un réseau Régional sera mis en place composé de 4 conseils régionaux répartis comme suit :
           </p>
         </Col>
         <Col className="network-block_right opacity-0 js-slide-from-down" data-delay={4} s='12' m='6'>

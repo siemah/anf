@@ -116,13 +116,13 @@ export default class Footer extends React.Component {
               <Link to='/' className='footer-block__creadcrumb-link'>Accueil</Link>
             </li>
             <li className='footer-block__creadcrumb-item'>
-              <Link to='/' className='footer-block__creadcrumb-link'>Presentation</Link>
+              <Link to='/presentation' className='footer-block__creadcrumb-link'>Presentation</Link>
             </li>
             <li className='footer-block__creadcrumb-item'>
-              <Link to='/' className='footer-block__creadcrumb-link'>Caontact</Link>
+              <Link to='/nos-contacts' className='footer-block__creadcrumb-link'>Contact</Link>
             </li>
             <li className='footer-block__creadcrumb-item'>
-              <Link to='/' className='footer-block__creadcrumb-link'>Preinscription</Link>
+              <Link to='/preinscription' className='footer-block__creadcrumb-link'>Preinscription</Link>
             </li>
           </ul>
         </nav>
