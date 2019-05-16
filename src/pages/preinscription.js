@@ -30,7 +30,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
               </div>
             </Col>
             <Col s='12' m='6' l='5' className="preregister-block__form-wrapper">
-              <form action="#">
+              <form action="#" netlify-honeypot="bot-field" action='./success-de-preinscription/' name="preinscription" method="POST" data-netlify="true">
                 <Row className="opacity-0 js-slide-from-down" data-delay={1}>
                   <Col s='12'>
                     <h2 className='center'>Préinscription</h2>
