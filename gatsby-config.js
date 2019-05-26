@@ -29,7 +29,7 @@ module.exports = {
         background_color: `#1e0c65`,
         theme_color: `#1e0c65`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
     // add transition when user change pages
