@@ -105,7 +105,7 @@ export default class Footer extends React.Component {
     return(
       <div className="footer footer-block center" style={{backgroundImage: `url(${AHeroBG})`}}>
         <div className="footer-block__brand-block">
-          <BrandLogo className='footer-block__brand-logo' />
+          <BrandLogo className='footer-block__brand-logo' style={{height: '80px'}} />
           <h2 className="footer-block__brand-name mb0">
             Association National des Financiers
           </h2>
