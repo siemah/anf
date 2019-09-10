@@ -21,8 +21,8 @@
   word-break: keep-all;
   word-wrap: normal;
 }
-.hero__link {
-  background-color: #1e0c65;
+.hero__link.index__button {
+  background-color: #1e0c65 !important;
   transition: background-color .3s;
 }
 .hero__link a{
@@ -98,6 +98,9 @@
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-color: #eaeaea;
+}
+.about-block .container {
+  overflow: hidden;
 }
 
 /************************
