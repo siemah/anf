@@ -32,12 +32,12 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
             <Col s='12' m='6' l='5' className="preregister-block__form-wrapper">
               <form action="#" netlify-honeypot="bot-field" action='/success-de-preinscription/' name="preinscription" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="preinscription" />
-                <Row className="opacity-0 js-slide-from-down" data-delay={1}>
+                <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12'>
                     <h2 className='center'>Préinscription</h2>
                   </Col>
                 </Row>
-                <Row className="opacity-0 js-slide-from-down" data-delay={1.5}>
+                <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' m='6'>
                     <FormField name='nom' placeholder='Votre Nom' label='Nom*' />
                   </Col>
@@ -45,7 +45,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                     <FormField name='prenom' placeholder='Votre Prénom' label='Prénom*' />
                   </Col>
                 </Row>
-                <Row className="opacity-0 js-slide-from-down" data-delay={1.75}>
+                <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' l='6'>
                     <FormField name='tel' placeholder='0 556 100 010' label='Numéro de tél*' />
                   </Col>
@@ -53,7 +53,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                     <FormField name='email' placeholder='nom-adresse@domain.com' label='Adresse email*' />
                   </Col>
                 </Row>
-                <Row className="opacity-0 js-slide-from-down" data-delay={2}>
+                <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' m='6'>
                     <FormField name='date-de-naissance' type='date' placeholder='JJ/MM/AAAA' label='Date De Naissance*' />
                   </Col>
@@ -61,7 +61,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                     <FormField name='lieu-de-naissance' placeholder='Cite 20 Aout 56' label='Lieu De Naissance*' />
                   </Col>
                 </Row>
-                <Row className="opacity-0 js-slide-from-down" data-delay={2.5}>
+                <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' m='6'>
                     <FormField name='profession' placeholder='Manager, Professeur ..' label='Votre Profession*' />
                   </Col>
@@ -69,12 +69,12 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                     <FormField name='employeur' placeholder="Employeur (nom d'entreprise)" label='Employeur*' />
                   </Col>
                 </Row>
-                <Row className="opacity-0 js-slide-from-down" data-delay={3}>
+                <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12'>
                     <FormField name='adresse-professionelle' placeholder='Ben Aknoun, alger' label='Adresse Professionelle*' />
                   </Col>
                 </Row>
-                <Row className="opacity-0 js-slide-from-down" data-delay={3.5}>
+                <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' m="6">
                     <FormField name='diplome' placeholder="Doctorat En Economie étranger" label='Diplôme/Titre*' />
                   </Col>
@@ -82,7 +82,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                     <FormField name='nationalite' placeholder="Algerienne" label='Nationalité*' />
                   </Col>
                 </Row>
-                <Row className="opacity-0 js-slide-from-down" data-delay={3.5}>
+                <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12'>
                     <label htmlFor="terms">
                       <input id={'terms'} type='checkbox' className="form-field__checkbox" value='1' />
