@@ -116,7 +116,6 @@ export const pageQuery = graphql`
   {
     wordpressPost(
       categories: {elemMatch: {slug: {eq: "terms"}}}
-      slug: {regex: "/.?(formulaire)|(adhesion).?/ig"}
     ) {
       id
       title
