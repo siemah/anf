@@ -107,6 +107,9 @@
     .card_primary .card__action-block {
         padding-top: .75rem;
     }
+    .organisation-card__theme_full {
+        max-width: 100% !important;
+    }
     /*********************
         president
   *********************/
