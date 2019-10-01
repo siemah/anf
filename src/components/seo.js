@@ -19,6 +19,10 @@ function SEO({ description, lang, meta, keywords, title }) {
             titleTemplate={`%s - ${data.site.siteMetadata.title}`}
             meta={[
               {
+                name: `generator`,
+                content: 'dayenio.ml',
+              },
+              {
                 name: `description`,
                 content: metaDescription,
               },
