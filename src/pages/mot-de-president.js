@@ -7,7 +7,7 @@ import Jumbotron from '../components/widgets/Jumbotron';
 import { Container, Row, Col } from '../components/layout-components/grid';
 
 import '../assets/css/president.css';
-import PresidentImg from '../assets/images/office-work.jpg'
+// import PresidentImg from '../assets/images/office-work.jpg'
 import AHeroBGrey from '../assets/images/a-hero-grey.png'
 
 const PresidentPage = () => (
@@ -34,10 +34,10 @@ const PresidentPage = () => (
 	    <section className="content-block" style={{backgroundImage: `url(${AHeroBGrey})`}}>
 	    	<Container>
 	    		<Row>
-	    			<Col s='12'>
+						<Col s={12} m={4} className='image__block' />
+	    			<Col s={12} m={8} className='content__block'>
 	    				<article className="content-block__description opacity-0 js-slide-from-down" data-delay={.5}>
 	    					<p className='first-p'>
-                  <img src={PresidentImg} alt="président de l'ANF" className="content__image left"/>
 	    							Chers Membres, chers Visiteurs,
 									C’est avec un grand plaisir d’annoncer le lancement d’un nouveau
 									site web pour l’Association Nationale des Financiers « ANF ». Ce site
