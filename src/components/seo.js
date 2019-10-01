@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import Logo from "../assets/images/logo.svg";
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, image=null }) {
+  const _ogImage = image || Logo;
   return (
     <StaticQuery
       query={detailsQuery}
@@ -29,6 +31,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 property: `og:title`,
                 content: title,
+              },
+              {
+                property: `og:image`,
+                content: _ogImage,
               },
               {
                 property: `og:description`,
