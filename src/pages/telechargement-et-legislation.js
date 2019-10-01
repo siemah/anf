@@ -21,7 +21,7 @@ const DownloadsAndLegislationPage = ({ data: { allWordpressPost } }) => (
       <Container>
         <ul className="list-block center">
           {
-            allWordpressPost.edges.length
+            allWordpressPost && allWordpressPost.edges.length
               ? allWordpressPost.edges.map(({ node }) => (
                 <li className="list-item" key={node.id}>
                   <a
