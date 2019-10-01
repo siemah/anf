@@ -17,7 +17,7 @@ import BGImage from '../assets/images/office-work.jpg';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Association Nationale des Financiers" keywords={[`gatsby`, `application`, `react`]} />
     <IndexHero />
     <About id='about' />
     <NetworkSection className='skew-section-after' />
