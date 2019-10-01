@@ -20,14 +20,14 @@ const Organisation = props => (
       </Col>
     </Row>
     <Row className='centered-dot-middle'>
-      <Col s='12' m='6' className='center opacity-0 js-slide-from-down' data-delay={0.4}>
+      <Col s='12' m='6' className='center opacity-0 js-slide-from-down' data-delay={0.3}>
         <Card
           title='M. CHEMAM Y Arafat'
           text="1er Vice Président"
           className='inline-block organisation-card__theme_full'
         />
       </Col>
-      <Col s='12' m='6' className='center opacity-0 js-slide-from-down' data-delay={0.5}>
+      <Col s='12' m='6' className='center opacity-0 js-slide-from-down' data-delay={0.6}>
         <Card
           title='M. BOUGUESBA Hatem'
           text="2ème Vice Président"
@@ -43,7 +43,7 @@ const Organisation = props => (
           className='inline-block organisation-card__theme_full'
         />
       </Col>
-      <Col s='12' m='6' className='center opacity-0 js-slide-from-down' data-delay={1}>
+      <Col s='12' m='6' className='center opacity-0 js-slide-from-down' data-delay={1.2}>
         <Card
           title='M. KHELACI Abed Elhakim'
           text="Trésorier"
@@ -53,21 +53,21 @@ const Organisation = props => (
     </Row>
     <Row style={{position:'relative'}}>
       <hr class="bar_theme_half mb0" />
-      <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.4}>
+      <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.5}>
         <Card
           title='M. NEDJAR Djamel'
           text="Membre"
           className='inline-block organisation-card__theme_full'
         />
       </Col>
-      <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.5}>
+      <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.6}>
         <Card
           title='Mr. MOUMENI Redouan'
           text="Membre"
           className='inline-block organisation-card__theme_full'
         />
       </Col>
-      <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.6}>
+      <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.7}>
         <Card
           title='Mr. LAROUM Hamid'
           text="Membre"
