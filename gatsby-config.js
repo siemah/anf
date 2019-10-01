@@ -1,10 +1,13 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Association National des Financiers`,
+    title: `A-N-F`,
     description: `Association National des Financiers.`,
     author: `@siemah`,
     lang: 'fr-FR',
+    local: 'fr_FR',
+    site_name: 'Association National des Financiers',
+    domain: 'https://anfdz.com',
     mapboxApiAccessToken: process.env.MAPBOX_API_ACCESS_TOKEN,
   },
   plugins: [
