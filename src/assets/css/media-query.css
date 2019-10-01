@@ -1,148 +1,162 @@
-@media only screen and (max-width: 1150px) {
-  
-}
+@media only screen and (max-width: 1150px) {}
+
 @media only screen and (max-width: 850px) {
-  /********************
+    /********************
         Header
   ********************/
-  .main-menu__right::before,
-  .main-menu__right::after {
-    display: none;
-  }
+    .main-menu__right::before,
+    .main-menu__right::after {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 765px) {
-  /********************
+    /********************
         Header
   ********************/
-  .main-menu__link {
-    font-size: 15px;
-  }
+    .main-menu__link {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-  /********************
+    /********************
         Header
   ********************/
-  .main-menu__container  {
-    opacity: 0;
-    z-index: -10;
-    visibility: hidden;
-    transition: all .5s;
-  }
-  .main-menu__container.show {
-    opacity: 1;
-    z-index: 10;
-    visibility: visible;
-    float: none !important;
-    position: absolute;
-    top: 55px;
-    width: 50%;
-    height: auto;
-  }
-  .main-menu__right.show {
-    left: 50%;
-    background-color: inherit;
-  }
-  .main-menu__container.show .main-menu__item {
-    background:grren;
-    display: block;
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-  }
-  .main-menu__container.show .main-menu__link {
-    display: inline-block;
-    color: #474747;
-    height: 100%;
-  }
-  .main-menu__container.show .main-menu__link::before {
-    display: none;
-  }
-  .main-menu__link {
-    font-size: 17px;
-  }
-  .main-menu__container.show .btn.btn-primary {
-    width: 100%;
-    border-radius: 0;
-    color: #ffffff;
-  }
-  .main-menu.full-screen .main-menu__mobile-menu-trigger {
-    width: 55px;
-    height: 55px;
-    bottom: auto !important;
-  }
-  /************************
+    .main-menu__container {
+        opacity: 0;
+        z-index: -10;
+        visibility: hidden;
+        transition: all .5s;
+    }
+    .main-menu__container.show {
+        opacity: 1;
+        z-index: 10;
+        visibility: visible;
+        float: none !important;
+        position: absolute;
+        top: 55px;
+        width: 50%;
+        height: auto;
+    }
+    .main-menu__right.show {
+        left: 50%;
+        background-color: inherit;
+    }
+    .main-menu__container.show .main-menu__item {
+        background: grren;
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+    }
+    .main-menu__container.show .main-menu__link {
+        display: inline-block;
+        color: #474747;
+        height: 100%;
+    }
+    .main-menu__container.show .main-menu__link::before {
+        display: none;
+    }
+    .main-menu__link {
+        font-size: 17px;
+    }
+    .main-menu__container.show .btn.btn-primary {
+        width: 100%;
+        border-radius: 0;
+        color: #ffffff;
+    }
+    .main-menu.full-screen .main-menu__mobile-menu-trigger {
+        width: 55px;
+        height: 55px;
+        bottom: auto !important;
+    }
+    /************************
           Hero
   ************************/
-  .hero__header{
-    width: 100% !important;
-  }
-  .hero-title__wrapper {
-    background-color: #0ab587;
-    color: #ffffff;
-  }
-
+    .hero__header {
+        width: 100% !important;
+    }
+    .hero-title__wrapper {
+        background-color: #0ab587;
+        color: #ffffff;
+    }
 }
+
 @media only screen and (max-width: 601px) {
-  .preregister-block__motivation-wrapper {
-    padding: 0 !important;
-  }
-  .preregister-block__motivation {
-    margin-bottom: .75rem;
-  }
-  /******************
+    .preregister-block__motivation-wrapper {
+        padding: 0 !important;
+    }
+    .preregister-block__motivation {
+        margin-bottom: .75rem;
+    }
+    /******************
       presentation
   *****************/
-  .centered-dot::before,
-  .centered-dot-middle::before,
-  .centered-dot-middle > .col:first-child::before {
-    display: none;
-  }
-  .organisation-block .col {
-    margin-bottom: 20px;
-  }
-  .col .card {
-    display: block !important;
-  }
-  .card_primary .card__action-block{
-    padding-top: .75rem;
-  }
+    .centered-dot::before,
+    .centered-dot-middle::before,
+    .centered-dot-middle>.col:first-child::before {
+        display: none;
+    }
+    .organisation-block .col {
+        margin-bottom: 20px;
+    }
+    .col .card {
+        display: block !important;
+    }
+    .card_primary .card__action-block {
+        padding-top: .75rem;
+    }
+    /*********************
+        president
+  *********************/
+    .image__block {
+        height: 70vh !important;
+        background-position: centerc;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg) !important;
+        transform-style: preserve-3d !important;
+        -webkit-mask-image: url('../images/image-mask.svg');
+        -webkit-mask-repeat: no-repeat;
+    }
+    .content__block {
+        height: auto !important;
+        padding-top: 0rem !important;
+    }
 }
 
 @media only screen and (max-width: 550px) {
-  .header-title__2 {
-    font-size: 2.5rem !important;
-  }
-  .footer-block__brand-name {
-    font-size: 17px;
-  }
-  .copyright {
-    height: auto;
-    font-size: 14px;
-  }
-  .copyright div {
-    float: none !important;
-    text-align: left;
-  }
-  .circle {
-    height: 60px !important;
-    width: 60px !important;
-    line-height: 60px !important;
-  }
-  .circle.big {
-    line-height: 120px !important;
-    height: 120px !important;
-    width: 120px !important;
-    overflow: hidden;
-  }
-  .background-block {
-    padding-top: 5em !important;
-  }
+    .header-title__2 {
+        font-size: 2.5rem !important;
+    }
+    .footer-block__brand-name {
+        font-size: 17px;
+    }
+    .copyright {
+        height: auto;
+        font-size: 14px;
+    }
+    .copyright div {
+        float: none !important;
+        text-align: left;
+    }
+    .circle {
+        height: 60px !important;
+        width: 60px !important;
+        line-height: 60px !important;
+    }
+    .circle.big {
+        line-height: 120px !important;
+        height: 120px !important;
+        width: 120px !important;
+        overflow: hidden;
+    }
+    .background-block {
+        padding-top: 5em !important;
+    }
 }
 
 @media only screen and (max-height: 450px) {
-  .background-block_size_3 {
-    height: 100% !important;
-  }
+    .background-block_size_3 {
+        height: 100% !important;
+    }
 }
