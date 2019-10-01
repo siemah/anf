@@ -13,7 +13,7 @@ import '../assets/css/preinscription.css';
 const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
   return (
     <Layout>
-      <SEO title="Préinscription et adhérer" />
+      <SEO url={`https://anfdz.com/preinscription/`} title="Préinscription et adhérer" />
       <Jumbotron className='preregister-hero' style={{backgroundImage: `url(${BGImage})`}}>
         <Container className="preregister-block">
           <Row>

@@ -12,7 +12,7 @@ import '../assets/css/presentation.css';
 const PresentationPage = (props) => {
   return (
     <Layout>
-      <SEO title="ANF Contacts" />
+      <SEO url={`https://anfdz.com/presentation/`} title="ANF Contacts" />
       <Hero />
       <AboutSection />
       <Organisation />

@@ -12,7 +12,7 @@ import AHeroBGrey from '../assets/images/a-hero-grey.png'
 
 const PresidentPage = () => (
   <Layout>
-    <SEO title="Mot De Président De l'ANF" />
+    <SEO url={`https://anfdz.com/mot-de-president/`} title="Mot De Président De l'ANF" />
     <div className={`hero hero-block`}>
 	    <Jumbotron
 	    	size="half"

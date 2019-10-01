@@ -11,7 +11,7 @@ import '../assets/css/telechargement-et-legislation.css';
 
 const DownloadsAndLegislationPage = ({ data: { allWordpressPost } }) => (
   <Layout>
-    <SEO title="Préinscription et adhérer" />
+    <SEO url={`https://anfdz.com/telechargement-et-legislation/`} title="Préinscription et adhérer" />
     <Jumbotron className='downloads-hero skew-section-after' theme='dark' nextElementId='donwloads-items'>
       <Container className="downloads-block">
         <h1 className="hero__title downloads-hero__title center">LEGISLATION & TEXTES REGLEMENTAIRES</h1>
