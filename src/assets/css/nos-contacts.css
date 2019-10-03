@@ -12,6 +12,17 @@
 a {
   color: #1e0ca5;
   font-size: 17px;
+  position: relative;
+  font-weight: 600;
+}
+.contact-link {
+  text-decoration: none;
+  background: linear-gradient(to top, #2ae0b0 0%,#1e0ca5 10%, transparent 10.01%) no-repeat left bottom;
+  background-size: 100% 100%;
+  transition: background-size .25s;
+}
+.contact-link:hover {
+  background-size: 0% 100%;
 }
 
 .map-block {
