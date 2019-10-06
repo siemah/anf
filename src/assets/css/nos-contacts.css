@@ -9,13 +9,11 @@
   margin-top: 0.75rem;
 }
 
-a {
+.contact-link {
   color: #1e0ca5;
   font-size: 17px;
   position: relative;
   font-weight: 600;
-}
-.contact-link {
   text-decoration: none;
   background: linear-gradient(to top, #2ae0b0 0%,#1e0ca5 10%, transparent 10.01%) no-repeat left bottom;
   background-size: 100% 100%;
