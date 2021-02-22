@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-//import { Link } from 'gatsby';
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import { Link } from 'gatsby';
 
 import { Container, Row, Col } from '../layout-components/grid';
 import { Button } from '../layout-components/form';
 
-const NetworkSection = ({className='', ...rest}) => (
+const NetworkSection = ({ className = '', ...rest }) => (
   <div className={`network-block ${className}`} id='network'>
-    <Container style={{position: 'relative', zIndex: 10}}>
+    <Container style={{ position: 'relative', zIndex: 10 }}>
 
       <Row>
         <Col className="network-block_left opacity-0 js-slide-from-down" data-delay={0} s='12' m='6'>
@@ -28,7 +27,7 @@ const NetworkSection = ({className='', ...rest}) => (
         </Col>
         <Col s="12" className="mt-2 opacity-0 js-slide-from-down" data-delay={2}>
           <Button name='contact' className='network-block__link capitalize right'>
-            <AniLink paintDrip hex="#0ab587" to='/preinscription'>Je veux m'inscrire</AniLink>
+            <Link paintDrip hex="#0ab587" to='/preinscription'>Je veux m'inscrire</Link>
           </Button>
         </Col>
       </Row>
@@ -52,15 +51,15 @@ const NetworkSection = ({className='', ...rest}) => (
       <Row className="network-block__graph center js-slideUp-block">
 
         <Col s='12'>
-          <span className={'circle opacity-0 js-slideUp'} data-delay={0} style={{backgroundColor: "#388E3C", top: 10}}>Centre</span>
+          <span className={'circle opacity-0 js-slideUp'} data-delay={0} style={{ backgroundColor: "#388E3C", top: 10 }}>Centre</span>
         </Col>
         <Col s='12'>
-          <span className={'circle opacity-0 js-slideUp'} data-delay={1} style={{backgroundColor: "#FF5722", left: 10}}>West</span>
-          <span className={'circle opacity-0 js-slideUp big'} data-delay={4} style={{backgroundColor: "#D32F2F"}}>ANF Réseau Regional</span>
-          <span className={'circle opacity-0 js-slideUp'} data-delay={2} style={{backgroundColor: "#512DA8", right: 10}}>Est</span>
+          <span className={'circle opacity-0 js-slideUp'} data-delay={1} style={{ backgroundColor: "#FF5722", left: 10 }}>West</span>
+          <span className={'circle opacity-0 js-slideUp big'} data-delay={4} style={{ backgroundColor: "#D32F2F" }}>ANF Réseau Regional</span>
+          <span className={'circle opacity-0 js-slideUp'} data-delay={2} style={{ backgroundColor: "#512DA8", right: 10 }}>Est</span>
         </Col>
         <Col s='12'>
-          <span className={'circle opacity-0 js-slideUp'} data-delay={3} style={{backgroundColor: "#03A9F4", bottom: 10}}>Sud</span>
+          <span className={'circle opacity-0 js-slideUp'} data-delay={3} style={{ backgroundColor: "#03A9F4", bottom: 10 }}>Sud</span>
         </Col>
 
       </Row>
@@ -68,7 +67,7 @@ const NetworkSection = ({className='', ...rest}) => (
       <Row className='mt-2'>
         <p className='opacity-0 js-slide-from-down' data-delay={.5}>N'hésitez pas de nous catactez pour dire un petit salutation et autre.</p>
         <Button name='contact' className='network-block__link pulse capitalize opacity-0 js-slide-from-down' data-delay={.7}>
-          <AniLink paintDrip hex="#0ab587" to='/nos-contacts'>contactez Nous</AniLink>
+          <Link paintDrip hex="#0ab587" to='/nos-contacts'>contactez Nous</Link>
         </Button>
       </Row>
 

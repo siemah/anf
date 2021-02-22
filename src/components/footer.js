@@ -18,8 +18,8 @@ export default class Footer extends React.Component {
    * @param {String} event the name of event to trigger
    * @param {Function} callback called when fire the event
    */
-  addListener = (domElement=window, event, callback=()=>{}) => {
-    if( typeof window !== `undefined` ) {
+  addListener = (domElement = window, event, callback = () => { }) => {
+    if (typeof window !== `undefined`) {
       domElement.addEventListener(event, callback);
     }
   }
@@ -33,8 +33,8 @@ export default class Footer extends React.Component {
    * @param {String} event the name of event to trigger
    * @param {Function} callback called when fire the event
    */
-  cleanListener = (domElement, event, callback=()=>{}) => {
-    if( typeof window !== `undefined` ) {
+  cleanListener = (domElement, event, callback = () => { }) => {
+    if (typeof window !== `undefined`) {
       domElement.removeEventListener(event, callback);
     }
   }
@@ -43,69 +43,69 @@ export default class Footer extends React.Component {
    * @name onScroll
    * this is a callback function called when scroll event fired
    */
-   onScroll = e => {
-     const mainMenu = $('.js-main-menu');
-     const mainMenuHeight = mainMenu !== undefined ? mainMenu.offsetHeight : 60;
-     const windowScroll = window.scrollY;
+  onScroll = e => {
+    const mainMenu = $('.js-main-menu');
+    const mainMenuHeight = mainMenu !== undefined ? mainMenu.offsetHeight : 60;
+    const windowScroll = window.scrollY;
 
-     if( windowScroll > mainMenuHeight && mainMenu && !hasClass(mainMenu, 'shadow')) {
-       addClass(mainMenu, 'shadow')
-     } else if (windowScroll <= mainMenuHeight &&mainMenu && hasClass(mainMenu, 'shadow')) {
-       removeClass(mainMenu, ' shadow');
-     }
+    if (windowScroll > mainMenuHeight && mainMenu && !hasClass(mainMenu, 'shadow')) {
+      addClass(mainMenu, 'shadow')
+    } else if (windowScroll <= mainMenuHeight && mainMenu && hasClass(mainMenu, 'shadow')) {
+      removeClass(mainMenu, ' shadow');
+    }
 
-     const $jsSlideUpElem = $('.js-slideUp-block');
-     if( $jsSlideUpElem && window.location.pathname === '/' && isInViewport($jsSlideUpElem) ){
-       const $jsSlideUpElems = $('.js-slideUp', true);
-       for (let i = 0; i < $jsSlideUpElems.length; i++) {
-         const elem = $jsSlideUpElems[i];
-         // if( isInViewport(elem)) {
-           const delay = elem.getAttribute('data-delay') * 500;
-           setTimeout(() => {
-             removeClass(elem, 'opacity-0');
-             addClass(elem, 'slideUp');
-             removeClass(elem, 'js-slideUp');
-           }, delay);
-         // }
-       }
-       removeClass($jsSlideUpElem, 'js-slideUp-block');
-     }
+    const $jsSlideUpElem = $('.js-slideUp-block');
+    if ($jsSlideUpElem && window.location.pathname === '/' && isInViewport($jsSlideUpElem)) {
+      const $jsSlideUpElems = $('.js-slideUp', true);
+      for (let i = 0; i < $jsSlideUpElems.length; i++) {
+        const elem = $jsSlideUpElems[i];
+        // if( isInViewport(elem)) {
+        const delay = elem.getAttribute('data-delay') * 500;
+        setTimeout(() => {
+          removeClass(elem, 'opacity-0');
+          addClass(elem, 'slideUp');
+          removeClass(elem, 'js-slideUp');
+        }, delay);
+        // }
+      }
+      removeClass($jsSlideUpElem, 'js-slideUp-block');
+    }
 
-     const $slideFromDown = $('.js-slide-from-down', true);
-     if( $slideFromDown.length ) {
-       for (let i = 0; i < $slideFromDown.length; i++) {
-         const elem = $slideFromDown[i];
-         let delay = 0;
-         if( isInViewport(elem) && hasClass(elem, 'js-slide-from-down') && !hasClass(elem, 'slideFromDown') ) {
-           delay = elem.getAttribute('data-delay') * 500
-           removeClass(elem, 'js-slide-from-down');
-           addClass(elem, 'slideFromDown');
-           addCss(elem, 'animation-delay', `${delay}ms`)
-           setTimeout(() => {
-             removeClass(elem, 'opacity-0');
-           }, delay)
-         }
-       }
-     }
-   }
+    const $slideFromDown = $('.js-slide-from-down', true);
+    if ($slideFromDown.length) {
+      for (let i = 0; i < $slideFromDown.length; i++) {
+        const elem = $slideFromDown[i];
+        let delay = 0;
+        if (isInViewport(elem) && hasClass(elem, 'js-slide-from-down') && !hasClass(elem, 'slideFromDown')) {
+          delay = elem.getAttribute('data-delay') * 500
+          removeClass(elem, 'js-slide-from-down');
+          addClass(elem, 'slideFromDown');
+          addCss(elem, 'animation-delay', `${delay}ms`)
+          setTimeout(() => {
+            removeClass(elem, 'opacity-0');
+          }, delay)
+        }
+      }
+    }
+  }
 
-  componentWillUnMount(){
+  componentWillUnmount() {
     this.addListener(window, "scroll", this.onScroll);
   }
 
-  componentDidMount(){
-    if( typeof window !== `undefined` ) {
-      window.scrollTo(0,window.pageYOffset+1);
-      setTimeout(()=> {window.scrollTo(0,window.pageYOffset)}, 40);
+  componentDidMount() {
+    if (typeof window !== `undefined`) {
+      window.scrollTo(0, window.pageYOffset + 1);
+      setTimeout(() => { window.scrollTo(0, window.pageYOffset) }, 40);
     }
     this.addListener(window, "scroll", this.onScroll);
   }
 
   render() {
-    return(
-      <div className="footer footer-block center" style={{backgroundImage: `url(${AHeroBG})`}}>
+    return (
+      <div className="footer footer-block center" style={{ backgroundImage: `url(${AHeroBG})` }}>
         <div className="footer-block__brand-block">
-          <BrandLogo className='footer-block__brand-logo' style={{height: '80px'}} />
+          <BrandLogo className='footer-block__brand-logo' style={{ height: '80px' }} />
           <h2 className="footer-block__brand-name mb0">
             Association National des Financiers
           </h2>

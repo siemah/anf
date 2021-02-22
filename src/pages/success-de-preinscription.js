@@ -1,5 +1,5 @@
 import React from 'react'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import { Link } from 'gatsby';
 
 import { Container } from '../components/layout-components/grid'
 import { Button } from '../components/layout-components/form'
@@ -20,11 +20,11 @@ const SuccessPreRegisterPage = () => (
         Un Email  vous sera transmis après traitement.
       </p>
       <Button id="btn">
-        <AniLink
+        <Link
           paintDrip hex="#1e0c65"
           to='/' title="DayenIO home page">
           Revenir à la page d'accueil
-        </AniLink>
+        </Link>
       </Button>
     </Container>
   </Layout>

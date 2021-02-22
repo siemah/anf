@@ -17,7 +17,7 @@ const DownloadsAndLegislationPage = ({ data: { allWordpressPost } }) => (
         <h1 className="hero__title downloads-hero__title center">LEGISLATION & TEXTES REGLEMENTAIRES</h1>
       </Container>
     </Jumbotron>
-    <div className='donwloads-block' style={{backgroundImage: `url(${AHeroBG})`}} id='donwloads-items'>
+    <div className='donwloads-block' style={{ backgroundImage: `url(${AHeroBG})` }} id='donwloads-items'>
       <Container>
         <ul className="list-block center">
           {
@@ -30,7 +30,7 @@ const DownloadsAndLegislationPage = ({ data: { allWordpressPost } }) => (
                     rel="noopener noreferrer"
                     title={node.acf.file.title}
                     href={node.acf.file.source_url}>
-                    { node.title }
+                    {node.title}
                   </a>
                 </li>
               ))
@@ -46,21 +46,29 @@ export default DownloadsAndLegislationPage;
 
 export const pageQuery = graphql`
   query {
-    allWordpressPost (
-     filter: { categories: { elemMatch: {slug: {eq: "pdf"}} } }
-     ) {
-     edges {
-       node {
-         title
-         id
-         acf {
-           file {
-             source_url
-             title
-           }
-         }
-       }
-     }
-   }
+    allWpPost (
+      filter: { 
+        categories: { 
+          nodes: {
+            elemMatch: {
+              slug: {eq: "pdf"
+            }
+          }
+        }
+      }
+    }) {
+      edges {
+        node {
+          title
+          id
+          acf {
+            document {
+              mediaItemUrl
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
   }
 `

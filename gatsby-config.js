@@ -1,3 +1,4 @@
+process.env.NODE_ENV !== "production" && require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
@@ -7,7 +8,7 @@ module.exports = {
     lang: 'fr-FR',
     local: 'fr_FR',
     site_name: 'Association National des Financiers',
-    domain: 'https://anfdz.com',
+    domain: 'https://www.anf-dz.com',
     mapboxApiAccessToken: process.env.MAPBOX_API_ACCESS_TOKEN,
   },
   plugins: [
@@ -44,11 +45,12 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        baseUrl: process.env.WORDPRESS_BASEURL,
+        url: process.env.WORDPRESS_BASEURL,
         protocol: process.env.WORDPRESS_PROTOCOL,
         hostingWPCOM: (process.env.WORDPRESS_WPCOM === false),
         verboseOutput: process.env.WORDPRESS_VERBOSE,
         useACF: process.env.USE_ACF,
+        // minimizeDeprecationNotice: true,
         includedRoutes: [
           "**/categories",
           "**/posts",

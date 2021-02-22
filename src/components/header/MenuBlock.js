@@ -1,22 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-//import { Link } from 'gatsby';
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import { Link } from 'gatsby';
 
-const MainBlock = ({ className, itemsList,  onClickLink=() => {}, ...rest }) => (
+const MainBlock = ({ className, itemsList, onClickLink = () => { }, ...rest }) => (
   <ul className={`main-menu__container ${className || ''}`}>
     {
-      itemsList.map( item => (
+      itemsList.map(item => (
         <li className="main-menu__item" key={item.url}>
-          <AniLink 
+          <Link
             cover direction='down' bg="#1e0c65"
-            to={item.url} 
-            className={`main-menu__link ${item.className || ''}`} 
+            to={item.url}
+            className={`main-menu__link ${item.className || ''}`}
             onClick={onClickLink} >
             {item.label}
-          </AniLink>
+          </Link>
         </li>
-      ) )
+      ))
     }
   </ul>
 )

@@ -10,11 +10,11 @@ import { Container, Row, Col } from '../components/layout-components/grid';
 import BGImage from '../assets/images/preregister.svg';
 import '../assets/css/preinscription.css';
 
-const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
+const PreinscriptionPage = ({ data: { wordpressPost: post } }) => {
   return (
     <Layout>
       <SEO url={`https://anfdz.com/preinscription/`} title="Préinscription et adhérer" />
-      <Jumbotron className='preregister-hero' style={{backgroundImage: `url(${BGImage})`}}>
+      <Jumbotron className='preregister-hero' style={{ backgroundImage: `url(${BGImage})` }}>
         <Container className="preregister-block">
           <Row>
             <Col s='12' m='6' l='7' className='preregister-block__motivation-wrapper'>
@@ -30,7 +30,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
               </div>
             </Col>
             <Col s='12' m='6' l='5' className="preregister-block__form-wrapper">
-              <form action="#" netlify-honeypot="bot-field" action='/success-de-preinscription/' name="preinscription" method="POST" data-netlify="true">
+              <form netlify-honeypot="bot-field" action='/success-de-preinscription/' name="preinscription" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="preinscription" />
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12'>
@@ -92,7 +92,7 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
                       post && (
                         <>
                           <br />
-                          <a href={post.acf.file.source_url} style={{textDecoration: 'underline'}} target='_blank' rel='onreferer noopener' alt={post.title}>
+                          <a href={post.acf.file.mediaItemUrl || post.acf.file.source_url} style={{ textDecoration: 'underline' }} target='_blank' rel='noreferrer noopener' alt={post.title}>
                             Télécharger le formulaire en pdf pour compléter l'inscription en arrivant au siège de l'association ANF.
                           </a>
                         </>
@@ -114,14 +114,23 @@ const PreinscriptionPage = ({data: { wordpressPost: post}}) => {
 
 export const pageQuery = graphql`
   {
-    wordpressPost(
-      categories: {elemMatch: {slug: {eq: "terms"}}}
+    wpPost(
+      categories: {
+        nodes: {
+          elemMatch: {
+            slug: {
+              eq: "terms"
+            }
+          }
+        }
+      }
     ) {
       id
       title
       acf{
-        file {
-          source_url
+        document {
+          sourceUrl
+          mediaItemUrl
         }
       }
     }
