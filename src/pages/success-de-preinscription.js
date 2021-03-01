@@ -20,9 +20,7 @@ const SuccessPreRegisterPage = () => (
         Un Email  vous sera transmis après traitement.
       </p>
       <Button id="btn">
-        <Link
-          paintDrip hex="#1e0c65"
-          to='/' title="DayenIO home page">
+        <Link to='/' title="DayenIO home page">
           Revenir à la page d'accueil
         </Link>
       </Button>

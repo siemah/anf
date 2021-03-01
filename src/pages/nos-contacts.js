@@ -13,7 +13,11 @@ import '../assets/css/nos-contacts.css';
 const OurContactsPage = ({ data }) => {
   return (
     <Layout>
-      <SEO url={`https://anfdz.com/nos-contacts/`} title="ANF Contacts" />
+      <SEO
+        url={`https://anfdz.com/nos-contacts/`}
+        title="ANF Contacts" 
+        description="N'hesitez pas de nous cantactez. Nous somme en votre service en tous les moments."
+        />
       <Jumbotron className='contacts-hero' style={{backgroundImage: `url(${BGImage})`}}>
         <div className='map-block'>
           <Map

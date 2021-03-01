@@ -13,7 +13,12 @@ import '../assets/css/preinscription.css';
 const PreinscriptionPage = ({ data: { wordpressPost: post } }) => {
   return (
     <Layout>
-      <SEO url={`https://anfdz.com/preinscription/`} title="Préinscription et adhérer" />
+      <SEO
+        url={`https://anfdz.com/preinscription/`}
+        title="Préinscription et adhérer"
+        description="Pourquoi adhérer:Assister à l’assemblée générale annuelle;Accéder à la revue de l’ANF;Bénéficier de tarifs préférentiels pour tous les évènements organisés par l’ANF;"
+        keywords={["adhérer", "l’assemblée", "générale", "revue de l’ANF", "Bénéficier", "préférentiels", "évènements", "l’ANF"]}
+      />
       <Jumbotron className='preregister-hero' style={{ backgroundImage: `url(${BGImage})` }}>
         <Container className="preregister-block">
           <Row>
