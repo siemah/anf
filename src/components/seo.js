@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import Logo from "../assets/images/logo.svg";
+import Logo from "../assets/images/anf-opengraph.png";
 
-function SEO({ description, lang, meta, keywords, title, url=null, image=null, }) {
+function SEO({ description, lang, meta, keywords, title, url = null, image = null, }) {
   const _ogImage = image || Logo;
   return (
     <StaticQuery
@@ -17,6 +17,10 @@ function SEO({ description, lang, meta, keywords, title, url=null, image=null, }
             htmlAttributes={{
               lang,
             }}
+            link={[{
+              rel: 'canonical',
+              href: url || data.site.siteMetadata.domain
+            }]}
             title={title}
             titleTemplate={`%s - ${data.site.siteMetadata.title}`}
             meta={[
@@ -46,7 +50,7 @@ function SEO({ description, lang, meta, keywords, title, url=null, image=null, }
               },
               {
                 property: `og:image`,
-                content: _ogImage,
+                content: `${data.site.siteMetadata.domain}${_ogImage}`,
               },
               {
                 property: `og:description`,
@@ -76,9 +80,9 @@ function SEO({ description, lang, meta, keywords, title, url=null, image=null, }
               .concat(
                 keywords.length > 0
                   ? {
-                      name: `keywords`,
-                      content: keywords.join(`, `),
-                    }
+                    name: `keywords`,
+                    content: keywords.join(`, `),
+                  }
                   : []
               )
               .concat(meta)}
