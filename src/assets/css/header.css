@@ -120,7 +120,6 @@
 .main-menu__right {
   position: relative;
   background-color: #f6f6f6;
-  padding-right: 2.5%;
 }
 .main-menu__right::before,
 .main-menu__right::after {

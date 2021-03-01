@@ -87,11 +87,11 @@ const MainMenu = props => {
         <div className="fake-bar half"></div>
         <div className="fake-bar "></div>
       </button>
-      <Container>
-        <BrandLogo className='main-menu__logo-brand left' onClickLink={onClickLink} />
+      <div>
+        <BrandLogo className='main-menu__logo-brand left pl-1' onClickLink={onClickLink} />
         <MenuBlock className='main-menu__center left js-main-menu__container' onClickLink={onClickLink} itemsList={centerItems} />
-      </Container>
-      <MenuBlock className='main-menu__right right js-main-menu__container' onClickLink={onClickLink} itemsList={rightItems} />
+      </div>
+      <MenuBlock className='main-menu__right right js-main-menu__container pr-05' onClickLink={onClickLink} itemsList={rightItems} />
     </nav>
   )
 }

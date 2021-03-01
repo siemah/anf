@@ -6,7 +6,6 @@ import Logo from "../../assets/images/logo.svg";
 
 const BrandLogo = ({ className = '', onClickLink = () => { }, ...rest }) => (
   <Link
-    cover direction='up' bg="#1e0c65"
     to='/'
     onClick={onClickLink}
     className={`logo-brand-block ${className}`}

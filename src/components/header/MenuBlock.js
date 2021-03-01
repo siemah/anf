@@ -8,7 +8,6 @@ const MainBlock = ({ className, itemsList, onClickLink = () => { }, ...rest }) =
       itemsList.map(item => (
         <li className="main-menu__item" key={item.url}>
           <Link
-            cover direction='down' bg="#1e0c65"
             to={item.url}
             className={`main-menu__link ${item.className || ''}`}
             onClick={onClickLink} >
