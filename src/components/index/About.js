@@ -27,9 +27,7 @@ const About = ({ className = '', showLink = true, children, ...rest }) => (
           showLink && (
             <Col s='12' className='mt-2 opacity-0 js-slide-from-down' data-delay={2}>
               <Button className='right capitalize' name='button' style={{ backgroundColor: '#1e0c65', }}>
-                <Link
-                  paintDrip hex='#1e0c65'
-                  to='/presentation' style={{ color: '#ffffff', display: 'block' }}>savoir plus sur ANF</Link>
+                <Link to='/presentation' style={{ color: '#ffffff', display: 'block' }}>savoir plus sur ANF</Link>
               </Button>
             </Col>
           )

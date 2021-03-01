@@ -52,7 +52,7 @@ const Organisation = props => (
       </Col>
     </Row>
     <Row style={{position:'relative'}}>
-      <hr class="bar_theme_half mb0" />
+      <hr className="bar_theme_half mb0" />
       <Col s='12' m='4' className='center opacity-0 js-slide-from-down' data-delay={1.5}>
         <Card
           title='M. NEDJAR Djamel'

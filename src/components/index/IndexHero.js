@@ -18,7 +18,7 @@ const IndexHero = ({ className = '', ...rest }) => (
             <span className="hero-title__wrapper">Association Nationale des Financiers</span>
           </h1>
           <Button className='hero__link index__button p0 opacity-0 js-slide-from-down' data-delay={1} name='preinscription'>
-            <Link paintDrip hex='#1e0c65' to='/preinscription' >Préinscription</Link>
+            <Link to='/preinscription' >Préinscription</Link>
           </Button>
         </div>
       </Container>
