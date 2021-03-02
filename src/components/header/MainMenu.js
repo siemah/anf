@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Container } from '../layout-components/grid';
 import MenuBlock from './MenuBlock';
 import BrandLogo from '../widgets/BrandLogo'
 
