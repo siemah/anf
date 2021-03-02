@@ -10,7 +10,10 @@ import { Container, Row, Col } from '../components/layout-components/grid';
 import BGImage from '../assets/images/preregister.svg';
 import '../assets/css/preinscription.css';
 
-const PreinscriptionPage = ({ data: { wordpressPost: post } }) => {
+const PreinscriptionPage = ({ data: { allWpPost: posts } }) => {
+  const termsDocument = posts.edges.find(({ node }) => node.slug.includes("terms"))
+  const formsDocument = posts.edges.find(({ node }) => node.slug.includes("imprimer"))
+
   return (
     <Layout>
       <SEO
@@ -90,14 +93,17 @@ const PreinscriptionPage = ({ data: { wordpressPost: post } }) => {
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12'>
                     <label htmlFor="terms">
-                      <input id={'terms'} type='checkbox' className="form-field__checkbox" value='1' />
-                      Accêpter les <Link to='/terms'>conditions et les terms</Link> d'inscription
+                      <input id={'terms'} type='checkbox' className="form-field__checkbox mr-1" value='1' />
+                      Accêpter les <a href={termsDocument.node.acf.document.mediaItemUrl || termsDocument.node.acf.document.source_url}>conditions et les terms</a> d'inscription
                     </label>
                     {
-                      post && (
+                      formsDocument && (
                         <>
                           <br />
-                          <a href={post.acf.file.mediaItemUrl || post.acf.file.source_url} style={{ textDecoration: 'underline' }} target='_blank' rel='noreferrer noopener' alt={post.title}>
+                          <a href={formsDocument.node.acf.document.mediaItemUrl || formsDocument.node.acf.document.source_url}
+                            style={{ textDecoration: 'underline', fontSize: 12 }}
+                            target='_blank'
+                            rel='noreferrer noopener' alt={posts.title}>
                             Télécharger le formulaire en pdf pour compléter l'inscription en arrivant au siège de l'association ANF.
                           </a>
                         </>
@@ -119,23 +125,30 @@ const PreinscriptionPage = ({ data: { wordpressPost: post } }) => {
 
 export const pageQuery = graphql`
   {
-    wpPost(
-      categories: {
+    allWpPost(
+      filter: {
+				categories: {
         nodes: {
           elemMatch: {
             slug: {
-              eq: "terms"
+              in: ["terms", "imprimer"]
             }
           }
         }
       }
+      }
     ) {
-      id
-      title
-      acf{
-        document {
-          sourceUrl
-          mediaItemUrl
+      edges {
+				node {
+					id
+          title
+          slug
+          acf{
+            document {
+              sourceUrl
+              mediaItemUrl
+            }
+          }
         }
       }
     }

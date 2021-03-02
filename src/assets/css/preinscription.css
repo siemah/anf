@@ -29,6 +29,9 @@
   font-family: 'Open Sans', Arial,Helvetica, sans-serif;
   margin-bottom: .5rem;
 }
+.form-field__checkbox {
+  margin-right: 0.5rem;
+}
 .form__button_submit {
   display: block;
   width: 100%;
