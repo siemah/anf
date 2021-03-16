@@ -94,13 +94,13 @@ const PreinscriptionPage = ({ data: { allWpPost: posts } }) => {
                   <Col s='12'>
                     <label htmlFor="terms">
                       <input id={'terms'} type='checkbox' className="form-field__checkbox mr-1" value='1' />
-                      Accêpter les <a href={termsDocument.node.acf.document.mediaItemUrl || termsDocument.node.acf.document.source_url}>conditions et les terms</a> d'inscription
+                      Accêpter les <a href={termsDocument.node.acf.document.publicURL || termsDocument.node.acf.document.mediaItemUrl || termsDocument.node.acf.document.source_url}>conditions et les terms</a> d'inscription
                     </label>
                     {
                       formsDocument && (
                         <>
                           <br />
-                          <a href={formsDocument.node.acf.document.mediaItemUrl || formsDocument.node.acf.document.source_url}
+                          <a href={formsDocument.node.acf.document.localFile.publicURL || formsDocument.node.acf.document.mediaItemUrl || formsDocument.node.acf.document.source_url}
                             style={{ textDecoration: 'underline', fontSize: 12 }}
                             target='_blank'
                             rel='noreferrer noopener' alt={posts.title}>
@@ -145,6 +145,9 @@ export const pageQuery = graphql`
           slug
           acf{
             document {
+              localFile {
+                publicURL
+              }
               sourceUrl
               mediaItemUrl
             }

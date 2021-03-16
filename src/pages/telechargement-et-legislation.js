@@ -36,7 +36,7 @@ const DownloadsAndLegislationPage = ({ data: { allWpPost } }) => (
                         target='_blank'
                         rel="noopener noreferrer"
                         title={node.title}
-                        href={node.acf.document.mediaItemUrl}>
+                        href={node.acf.document.localFile.publicURL || node.acf.document.mediaItemUrl}>
                         {node.title}
                       </a>
                     </li>
@@ -77,6 +77,9 @@ export const pageQuery = graphql`
           }
           acf {
             document {
+              localFile {
+                publicURL
+              }
 							sourceUrl
               mediaItemUrl
             }
