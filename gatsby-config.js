@@ -45,18 +45,37 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: process.env.WORDPRESS_BASEURL,
-        protocol: process.env.WORDPRESS_PROTOCOL,
-        hostingWPCOM: (process.env.WORDPRESS_WPCOM === false),
-        verboseOutput: process.env.WORDPRESS_VERBOSE,
-        useACF: process.env.USE_ACF,
-        // minimizeDeprecationNotice: true,
-        includedRoutes: [
-          "**/categories",
-          "**/posts",
-          "**/media",
-          "**/tags",
-        ],
+        url: 'https://cdn.anf-dz.com/graphql',
+        verbose: true,
+        schema: {
+          timeout: 60000,
+        },
+        type: {
+          Page: {
+            exclude: true,
+          },
+          Tag: {
+            exclude: true,
+          },
+          Taxonomy: {
+            exclude: true,
+          },
+          UserRole: {
+            exclude: true,
+          },
+          Comment: {
+            exclude: true,
+          },
+          Menu: {
+            exclude: true,
+          },
+          User: {
+            exclude: true,
+          },
+          ContentType: {
+            exclude: true,
+          }
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
