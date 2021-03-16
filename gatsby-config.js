@@ -45,8 +45,8 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: 'https://cdn.anf-dz.com/graphql',
-        verbose: true,
+        url: process.env.WORDPRESS_BASEURL,
+        verbose: process.env.WORDPRESS_VERBOSE,
         schema: {
           timeout: 60000,
         },
