@@ -38,7 +38,7 @@ const PreinscriptionPage = ({ data: { allWpPost: posts } }) => {
               </div>
             </Col>
             <Col s='12' m='6' l='5' className="preregister-block__form-wrapper">
-              <form netlify-honeypot="bot-field" action='/success-de-preinscription/' name="preinscription" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <form action='/success-de-preinscription/' name="preinscription" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                 <input type="hidden" name="form-name" value="preinscription" />
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12'>
@@ -90,8 +90,8 @@ const PreinscriptionPage = ({ data: { allWpPost: posts } }) => {
                     <FormField name='nationalite' placeholder="Algerienne" label='Nationalité*' />
                   </Col>
                 </Row>
+                <div data-netlify-recaptcha="true"></div>
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
-                  <div className='col s12' data-netlify-recaptcha="true"></div>
                   <Col s='12'>
                     <label htmlFor="terms">
                       <input id={'terms'} type='checkbox' className="form-field__checkbox mr-1" value='1' />
