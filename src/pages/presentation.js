@@ -14,7 +14,7 @@ const PresentationPage = (props) => {
     <Layout>
       <SEO
         url={`https://anf-dz.com/presentation/`}
-        title="À Propos De L'Association National Des Financiers"
+        title="À Propos De L'Association Nationale Des Financiers"
         description="L’Association Nationale des Financiers, ANF, est une Association Nationale à but non lucratif, dotée de la personnalité morale et de l’autonomie financière."
         keywords={["L’Association Nationale des Financiers", "préoccupations scientifiques", "Financiers Algériens", "Organiser des séminaires", "Echange d’expériences "]}
         />

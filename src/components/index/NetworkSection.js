@@ -65,7 +65,7 @@ const NetworkSection = ({ className = '', ...rest }) => (
       </Row>
 
       <Row className='mt-2'>
-        <p className='opacity-0 js-slide-from-down' data-delay={.5}>N'hésitez pas de nous catactez pour dire un petit salutation et autre.</p>
+        <p className='opacity-0 js-slide-from-down' data-delay={.5}>N'hésitez pas de nous catacter pour dire un petit salut...</p>
         <Button name='contact' className='network-block__link pulse capitalize opacity-0 js-slide-from-down' data-delay={.7}>
           <Link to='/nos-contacts'>contactez Nous</Link>
         </Button>

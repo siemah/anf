@@ -32,7 +32,7 @@ const OurContactsPage = ({ data }) => {
           </Row>
           <Row  className="mb0">
             <Col s='12' m='6' l='5'>
-              <p className='opacity-0 js-slide-from-down' data-delay={1} style={{marginBottom: '.5rem'}}>N'hesitez pas de nous cantactez. Nous somme en votre service en tous les moments.</p>
+              <p className='opacity-0 js-slide-from-down' data-delay={1} style={{marginBottom: '.5rem'}}>N’hésitez pas de nous cantacter. Nous sommes à votre service à tous moments..</p>
             </Col>
             <Col s='12' m='6' l='5'>
               <ul className="list-block ml0 pl0">

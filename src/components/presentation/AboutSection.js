@@ -8,7 +8,7 @@ const AboutSection = props => (
     <About showLink={false}>
       <Row>
         <Col s="12" m="6">
-          <h2 className="capitalize opacity-0 js-slide-from-down" data-delay={0.5}>Notre Missions</h2>
+          <h2 className="capitalize opacity-0 js-slide-from-down" data-delay={0.5}>Nos Missions</h2>
           <p className="description-block opacity-0 js-slide-from-down" data-delay={1}>
             Dans le cadre de ses missions, l’Association Nationale des Financiers (ANF) est chargée de :
           </p>
