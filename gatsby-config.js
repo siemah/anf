@@ -2,7 +2,7 @@ process.env.NODE_ENV !== "production" && require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `A-N-F`,
+    title: `anf-dz.com`,
     description: `L’Association Nationale des Financiers, ANF, est une Association Nationale à but non lucratif, dotée de la personnalité morale et de l’autonomie financière.`,
     author: `@siemah`,
     lang: 'fr-FR',

@@ -13,7 +13,7 @@ const DownloadsAndLegislationPage = ({ data: { allWpPost } }) => (
   <Layout>
     <SEO
       url={`https://anf-dz.com/telechargement-et-legislation/`}
-      title="Préinscription et adhérer"
+      title="Legislation et textes deglementaires"
       description="LEGISLATION et TEXTES REGLEMENTAIRES"
       keywords={["LEGISLATION", "TEXTES", "REGLEMENTAIRES", "ANF"]}
     />

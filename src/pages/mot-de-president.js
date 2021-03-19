@@ -13,7 +13,7 @@ const PresidentPage = () => (
 	<Layout>
 		<SEO
 			url={`https://anf-dz.com/mot-de-president/`}
-			title="Mot De Président De l'ANF"
+			title="Mot de président de l'ANF"
 			description="C’est avec un grand plaisir d’annoncer le lancement d’un nouveau site web pour l’Association Nationale des Financiers « ANF ». Ce site est considéré pour l’association comme premier espace internet en Algérie, pour vous accueillir. Il est consacré spécialement à l'Information et à l'Activité Financière."
 			keywords={["Mot", "De Président De l'ANF"]}
 		/>
