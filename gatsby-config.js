@@ -78,6 +78,45 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-293L3N7QBR",
+        head: false,
+        defer: true,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        // output: `/sitemap.xml`,
+        query: `
+          {
+            site {
+              siteMetadata {
+                domain
+              }
+            }
+  
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+        }`,
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.edges.map(edge => {
+            return {
+              url: site.siteMetadata.domain + edge.node.path + '/',
+              changefreq: `daily`,
+              priority: 0.9,
+            }
+          })
+      }
+    },
+    `gatsby-plugin-robots-txt`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
