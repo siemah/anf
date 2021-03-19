@@ -9,6 +9,7 @@ module.exports = {
     local: 'fr_FR',
     site_name: 'Association National des Financiers',
     domain: 'https://www.anf-dz.com',
+    siteUrl: 'https://www.anf-dz.com',
     mapboxApiAccessToken: process.env.MAPBOX_API_ACCESS_TOKEN,
   },
   plugins: [
@@ -94,7 +95,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                domain
+                siteUrl
               }
             }
   
@@ -109,7 +110,7 @@ module.exports = {
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map(edge => {
             return {
-              url: site.siteMetadata.domain + edge.node.path + '/',
+              url: site.siteMetadata.siteUrl + edge.node.path + '/',
               changefreq: `daily`,
               priority: 0.9,
             }
