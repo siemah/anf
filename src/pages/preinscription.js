@@ -47,47 +47,47 @@ const PreinscriptionPage = ({ data: { allWpPost: posts } }) => {
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' m='6'>
-                    <FormField name='nom' placeholder='Votre Nom' label='Nom*' />
+                    <FormField name='nom' placeholder='Votre Nom' label='Nom*' required />
                   </Col>
                   <Col s='12' m='6'>
-                    <FormField name='prenom' placeholder='Votre Prénom' label='Prénom*' />
+                    <FormField name='prenom' placeholder='Votre Prénom' label='Prénom*' required />
                   </Col>
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' l='6'>
-                    <FormField name='tel' placeholder='0 556 100 010' label='Numéro de tél*' />
+                    <FormField name='tel' placeholder='0 556 100 010' label='Numéro de tél*' required />
                   </Col>
                   <Col s='12' l='6'>
-                    <FormField name='email' placeholder='nom-adresse@domain.com' label='Adresse email*' />
+                    <FormField name='email' placeholder='nom-adresse@domain.com' label='Adresse email*' required />
                   </Col>
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' m='6'>
-                    <FormField name='date-de-naissance' type='date' placeholder='JJ/MM/AAAA' label='Date De Naissance*' />
+                    <FormField name='date-de-naissance' type='date' placeholder='JJ/MM/AAAA' label='Date De Naissance*' required />
                   </Col>
                   <Col s='12' m='6'>
-                    <FormField name='lieu-de-naissance' placeholder='Cite 20 Aout 56' label='Lieu De Naissance*' />
+                    <FormField name='lieu-de-naissance' placeholder='Cite 20 Aout 56' label='Lieu De Naissance*' required />
                   </Col>
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' m='6'>
-                    <FormField name='profession' placeholder='Manager, Professeur ..' label='Votre Profession*' />
+                    <FormField name='profession' placeholder='Manager, Professeur ..' label='Votre Profession*' required />
                   </Col>
                   <Col s='12' m='6'>
-                    <FormField name='employeur' placeholder="Employeur (nom d'entreprise)" label='Employeur*' />
+                    <FormField name='employeur' placeholder="Employeur (nom d'entreprise)" label='Employeur*' required />
                   </Col>
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12'>
-                    <FormField name='adresse-professionelle' placeholder='Ben Aknoun, alger' label='Adresse Professionelle*' />
+                    <FormField name='adresse-professionelle' placeholder='Ben Aknoun, alger' label='Adresse Professionelle*' required />
                   </Col>
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
                   <Col s='12' m="6">
-                    <FormField name='diplome' placeholder="Doctorat En Economie étranger" label='Diplôme/Titre*' />
+                    <FormField name='diplome' placeholder="Doctorat En Economie étranger" label='Diplôme/Titre*' required />
                   </Col>
                   <Col s='12' m="6">
-                    <FormField name='nationalite' placeholder="Algerienne" label='Nationalité*' />
+                    <FormField name='nationalite' placeholder="Algerienne" label='Nationalité*' required />
                   </Col>
                 </Row>
                 <Row className="opacity-0 js-slide-from-down" data-delay={0.1}>
