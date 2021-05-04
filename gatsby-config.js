@@ -90,7 +90,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        // output: `/sitemap.xml`,
+        output: `/sitemap-v2.xml`,
         query: `
           {
             site {
@@ -110,7 +110,7 @@ module.exports = {
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map(edge => {
             return {
-              url: site.siteMetadata.siteUrl + edge.node.path + '/',
+              url: site.siteMetadata.siteUrl + edge.node.path,
               changefreq: `daily`,
               priority: 0.9,
             }
